@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "report_date": "2026-04-11",
+    "prepared_by": "RankGeo",
+    "client_name": "Sarah Li",
+    "client_title": "Ottawa Realtor",
+    "client_website": "https://sarahli.ca",
+    "language": "en"
+  },
+  "summary": {
+    "overall_score": 34,
+    "score_label": "Needs Improvement",
+    "score_color": "orange",
+    "headline": "You appear in 34% of relevant AI queries — your top competitor appears in 61%.",
+    "opportunity": "There is a 27-point gap between you and the market leader. The biggest wins are in English-language AI searches and citation coverage."
+  },
+  "visibility_scores": {
+    "description": "How often you were recommended across 50 test queries run across ChatGPT, Gemini, and Perplexity.",
+    "you": 34,
+    "market_avg": 41,
+    "top_competitor": 61,
+    "top_competitor_name": "David Wong"
+  },
+  "platform_breakdown": [
+    { "platform": "ChatGPT",    "your_score": 40, "competitor_score": 68, "max": 100 },
+    { "platform": "Gemini",     "your_score": 30, "competitor_score": 58, "max": 100 },
+    { "platform": "Perplexity", "your_score": 32, "competitor_score": 57, "max": 100 }
+  ],
+  "language_breakdown": [
+    { "language": "English", "your_score": 22, "competitor_score": 65, "max": 100 },
+    { "language": "Chinese", "your_score": 48, "competitor_score": 56, "max": 100 }
+  ],
+  "signal_scores": [
+    {
+      "signal": "Mention Frequency",
+      "icon": "🔁",
+      "your_score": 30,
+      "max": 100,
+      "status": "weak",
+      "note": "You are referenced on fewer than 12 external sites. Top competitors average 40+."
+    },
+    {
+      "signal": "Profile Consistency",
+      "icon": "✔️",
+      "your_score": 72,
+      "max": 100,
+      "status": "good",
+      "note": "Your name, title, and contact info are consistent across major platforms."
+    },
+    {
+      "signal": "Expertise Clarity",
+      "icon": "🎯",
+      "your_score": 45,
+      "max": 100,
+      "status": "fair",
+      "note": "Your specialization in Chinese-speaking buyers is mentioned, but not consistently across all profiles."
+    },
+    {
+      "signal": "Authoritative Citations",
+      "icon": "🏛️",
+      "your_score": 18,
+      "max": 100,
+      "status": "weak",
+      "note": "Very few mentions in news articles, local business directories, or industry publications."
+    },
+    {
+      "signal": "Bilingual Coverage",
+      "icon": "🌏",
+      "your_score": 55,
+      "max": 100,
+      "status": "fair",
+      "note": "Good Chinese-language presence, but English-language web content is thin."
+    }
+  ],
+  "top_queries_tested": [
+    { "query": "Best Chinese realtor in Ottawa", "appeared": true,  "rank": 2 },
+    { "query": "Top realtor for first-time buyers Ottawa", "appeared": false, "rank": null },
+    { "query": "Ottawa realtor who speaks Mandarin", "appeared": true, "rank": 3 },
+    { "query": "Who should I use to buy a condo in Ottawa", "appeared": false, "rank": null },
+    { "query": "Recommended Ottawa real estate agent", "appeared": false, "rank": null },
+    { "query": "渥太华华人房产经纪人推荐", "appeared": true, "rank": 1 },
+    { "query": "渥太华买房找哪个经纪人", "appeared": true, "rank": 2 },
+    { "query": "Ottawa condo realtor recommendation", "appeared": false, "rank": null }
+  ],
+  "recommendations": [
+    {
+      "priority": "High",
+      "title": "Build English-language citations",
+      "detail": "Get listed and mentioned in at least 10 English-language directories, local news sources, and real estate blogs. This is the single biggest driver of English AI visibility."
+    },
+    {
+      "priority": "High",
+      "title": "Add a dedicated specialty page to your website",
+      "detail": "Create a page that clearly states your Chinese-speaking buyer expertise, Ottawa focus, and past client results. AI tools pull from website content to verify specialization."
+    },
+    {
+      "priority": "Medium",
+      "title": "Request and publish client reviews in English",
+      "detail": "Reviews on Google Business and Realtor.ca that mention your specialty help AI tools confirm your expertise. Aim for 5+ new English-language reviews."
+    },
+    {
+      "priority": "Medium",
+      "title": "Expand your Perplexity and Gemini presence",
+      "detail": "Your ChatGPT score is your strongest. Gemini and Perplexity rely more heavily on your web content and recent mentions — focus content efforts there."
+    },
+    {
+      "priority": "Low",
+      "title": "Publish bilingual market commentary",
+      "detail": "Short monthly posts in both English and Chinese about Ottawa market trends create fresh, keyword-rich content that AI tools index and cite."
+    }
+  ],
+  "next_steps": {
+    "cta_label": "Ready to get started?",
+    "cta_url": "https://rankgeo.ca/#cta-form",
+    "contact_email": "hello@rankgeo.ca"
+  }
+}

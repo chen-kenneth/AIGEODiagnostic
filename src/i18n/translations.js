@@ -1,0 +1,376 @@
+/**
+ * translations.js
+ *
+ * Flat-namespace translation map keyed by locale code.
+ * Each top-level locale key ('zh', 'en', …) contains identical
+ * sub-keys so any future locale can be added without touching
+ * component code — just add another top-level entry here.
+ *
+ * Usage via useLang():
+ *   const { t } = useLang()
+ *   t.hero.title  →  locale-specific string
+ */
+
+export const translations = {
+  // ─────────────────────────── CHINESE (default) ───────────────────────────
+  zh: {
+    nav: {
+      cta: '获取AI可见度报告',
+    },
+    hero: {
+      badge: '✦ 房产经纪人AI搜索优化',
+      headlinePre: '当买家向AI询问时，让',
+      headlineHighlight: '您',
+      headlinePost: '被推荐',
+      sub: '我们帮助您在客户使用ChatGPT、Gemini和Perplexity寻找房产经纪人时出现在推荐名单中。更多推荐 → 更多潜在客户。',
+      cta: '查看您在AI中的展示情况 →',
+      aiQuery: '"渥太华最佳华人房产经纪人"',
+      aiLabel: 'AI 推荐',
+      aiYou: '您',
+      aiFooter: '目标：始终出现在这个名单中',
+    },
+    shift: {
+      label: '行业转变',
+      title: '客户不再搜索——他们在问AI',
+      intro: '当今的买家不再浏览谷歌搜索结果，他们会直接提问：',
+      queries: [
+        '"渥太华有哪位好的华人房产经纪人？"',
+        '"适合首次购房者的最佳经纪人"',
+        '"买公寓应该信任谁？"',
+      ],
+      aiNote: 'AI工具会给出简短的推荐名单。',
+      highlightStrong: 'AI只选择少数几个——不出现就意味着错失机会。',
+      highlightSub: '如果您不在推荐名单中，就不会被考虑。',
+    },
+    whatWeDo: {
+      label: '核心服务',
+      title: '我们确保AI推荐您',
+      intro: 'RankGeo帮助您成为AI工具持续推荐的经纪人之一。我们不只是衡量数据——我们积极提升您在网络上的存在感，让AI系统认识并信任您。',
+      services: [
+        { icon: '🌐', title: '网络存在感', desc: '加强您在AI数据来源的关键平台上的可见度。' },
+        { icon: '📣', title: '引用与提及', desc: '增加全网引用和提及您的地点数量。' },
+        { icon: '✍️', title: '内容结构', desc: '优化内容结构，让AI系统理解您的专业并自信地推荐您。' },
+        { icon: '🇨🇳', title: '双语可见度', desc: '同时优化英文和中文搜索中的存在感，最大化覆盖范围。' },
+        { icon: '🏆', title: '竞争定位', desc: '确保您出现在顶级竞争对手旁边——并最终超越他们。' },
+        { icon: '📊', title: '可量化结果', desc: '通过真实查询数据，清晰追踪AI推荐您的频率及前后对比。' },
+      ],
+      takeaway: '👉 我们将您打造成AI系统可识别、可信赖的权威存在。',
+    },
+    results: {
+      label: '实际效果',
+      title: '实践中的变化',
+      before: '改变之前',
+      after: '改变之后',
+      beforeItems: [
+        'AI回答中很少被提及',
+        '竞争对手出现频率更高',
+        '英文查询中能见度有限',
+        '缺失AI推荐带来的潜在客户',
+      ],
+      afterItems: [
+        '持续出现在AI推荐名单中',
+        '与顶级经纪人并列出现',
+        '英文和中文查询中均有强劲存在感',
+        '稳定获得AI推荐带来的咨询客户',
+      ],
+      highlight: '更多出现 → 更多信任 → 更多潜在客户',
+    },
+    howAI: {
+      label: 'AI如何工作',
+      title: 'AI如何决定推荐谁',
+      intro: 'AI的工作方式不同于谷歌。它根据在整个互联网上遇到的信号进行推荐。',
+      signals: [
+        { num: '🔁', title: '提及频率', desc: '您在网络上被引用的频率' },
+        { num: '✔️', title: '信息一致性', desc: '您的信息在各平台是否保持一致' },
+        { num: '🎯', title: '专业清晰度', desc: '您的专业领域呈现得有多清晰易懂' },
+        { num: '🏛️', title: '权威来源', desc: '您在权威可信来源中的存在感' },
+        { num: '🌏', title: '语言相关性', desc: '在英文和中文语言来源中的存在' },
+      ],
+      ruleGreen: '如果AI到处都能看到您，它就会推荐您。',
+      ruleRed: '如果它认不出您，就不会推荐。',
+    },
+    process: {
+      label: '我们的方法',
+      title: '我们如何帮助您胜出',
+      steps: [
+        { title: '分析', desc: '我们运行真实AI查询，精确衡量您出现的频率——以及与竞争对手的差距。' },
+        { title: '定位', desc: '我们优化您在网络上的呈现方式和位置，让AI系统将您识别为值得信赖的专家。' },
+        { title: '放大', desc: '我们在AI工具依赖的平台和来源上扩大您的存在感。' },
+        { title: '监测', desc: '我们持续追踪改善进度，确保您的名字始终持续出现。' },
+      ],
+      ongoingStrong: '这是持续进行的——不是一次性修复。',
+      ongoingSub: 'AI推荐随着网络演变而变化，我们让您保持领先。',
+    },
+    diagnostic: {
+      label: 'AI可见度检测',
+      title: '先做一次AI可见度快速检测',
+      intro: '在开始之前，我们运行诊断，了解您当前的状态——您在AI回答中出现的频率、竞争对手在哪些方面超越您，以及您错失了哪些类型的搜索。',
+      insightLabel: '示例洞察报告',
+      youLabel: '您',
+      youPct: '18% 的相关查询',
+      compLabel: '竞争对手',
+      compPct: '43% 的相关查询',
+      insightNote: '「您在中文搜索中表现强劲，但在英文推荐中较弱——存在显著的未开发机会。」',
+      cta: '获取我的AI可见度报告 →',
+      subNote: '数据为证，而非空谈。先看真实数据再决定。',
+    },
+    niche: {
+      label: '我们服务的对象',
+      title: '专为渥太华华语房产经纪人打造',
+      intro: '我们专注于双语经纪人，因为大多数人只针对一种语言进行优化——这造成了重大的可见度缺口。',
+      enTitle: '英文搜索',
+      enDesc: '覆盖以英文搜索的买家——渥太华市场的主要群体。',
+      zhTitle: '中文搜索',
+      zhDesc: '吸引越来越多以母语搜索的粤语和普通话买家。',
+      gapStrong: '双语存在 = 双倍机会',
+      gapSub: '大多数竞争对手只在一种语言中出现，我们两者都覆盖。',
+    },
+    whyUs: {
+      label: '为什么选择RankGeo',
+      title: '经纪人选择我们的原因',
+      reasons: [
+        { title: '专注房地产', desc: '专为房产经纪人设计——而非将通用营销策略改头换面用于房地产。' },
+        { title: '专为AI搜索打造', desc: '我们专注于AI的推荐机制，而非已过时的SEO策略。' },
+        { title: '双语专业知识', desc: '深入理解英文和中文市场——在加拿大房地产营销领域颇为罕见。' },
+        { title: '数据驱动', desc: '以真实查询数据为支撑的可量化结果，而非模糊承诺或虚荣指标。' },
+        { title: '真实潜在客户', desc: '我们的目标是产生真实的客户咨询——而不只是改善仪表盘数字。' },
+      ],
+    },
+    ctaForm: {
+      label: '免费AI检测',
+      title: '了解AI推荐您的频率',
+      intro: '我们将向您展示您所处的位置——以及如何改善。',
+      nameLbl: '您的姓名',
+      namePh: '例如：李梅',
+      websiteLbl: '网站或主页链接',
+      websitePh: 'https://yoursite.com',
+      cityLbl: '城市',
+      cityPh: '渥太华',
+      cityDefault: '渥太华',
+      langLbl: '语言重点',
+      langOptions: [
+        { key: 'english', label: '英文' },
+        { key: 'chinese', label: '中文' },
+        { key: 'both', label: '两者' },
+      ],
+      emailLbl: '电子邮件',
+      emailPh: 'you@example.com',
+      submit: '运行AI检测 →',
+      subText: '无需技术知识，洞察清晰简明。',
+      successTitle: '您已加入名单！',
+      successMsg: '我们将运行您的AI可见度检测，并将结果发送到您的邮箱。',
+    },
+    faq: {
+      label: '常见问题',
+      title: '常见问题解答',
+      items: [
+        {
+          q: '这和SEO是一样的吗？',
+          a: '不一样。SEO侧重于在谷歌搜索结果页面上排名。我们专注于被ChatGPT、Gemini和Perplexity等AI工具推荐——这是一个不同的系统，有不同的信号。',
+        },
+        {
+          q: '多久能看到效果？',
+          a: '诊断洞察报告很快就能得到。AI推荐您的频率的实质性改善会随着您网络存在感的增强逐步积累——通常需要4至12周，取决于您的起点。',
+        },
+        {
+          q: '我需要修改网站吗？',
+          a: '不一定。我们会评估哪些变化对您的AI可见度影响最大，并只引导您做最重要的改变——无需大规模改版。',
+        },
+        {
+          q: '为什么要同时关注英文和中文？',
+          a: '因为渥太华的买家两种语言都用来搜索。大多数经纪人只在一种语言中可见。覆盖两者意味着您出现在更多相关AI推荐中——这是显著的竞争优势。',
+        },
+        {
+          q: '这会影响哪些AI工具？',
+          a: '我们专注于您的客户实际使用的工具：ChatGPT、Google Gemini和Perplexity。随着AI搜索的演变，我们会相应调整方法。',
+        },
+      ],
+    },
+    footer: {
+      tagline: 'AI可见度 · 真实客户 · 真实增长',
+      location: '加拿大渥太华',
+      copy: '© 2026 RankGeo. 保留所有权利。',
+    },
+  },
+
+  // ─────────────────────────── ENGLISH ─────────────────────────────────────
+  en: {
+    nav: {
+      cta: 'Get My AI Check',
+    },
+    hero: {
+      badge: '✦ AI Search Optimization for Realtors',
+      headlinePre: 'Get recommended by AI when buyers ask for a ',
+      headlineHighlight: 'realtor',
+      headlinePost: '',
+      sub: 'We help you show up in ChatGPT, Gemini, and Perplexity when clients ask who to trust.',
+      cta: 'See How You Show Up in AI →',
+      aiQuery: '"Best Chinese realtor in Ottawa"',
+      aiLabel: 'AI Answer',
+      aiYou: 'You',
+      aiFooter: 'The goal: always be on this list',
+    },
+    shift: {
+      label: 'The Shift',
+      title: "Clients aren't searching anymore — they're asking AI",
+      intro: "Today's buyers don't scroll through Google results. They ask questions like:",
+      queries: [
+        '"Who is a good Chinese realtor in Ottawa?"',
+        '"Best agent for first-time home buyers"',
+        '"Who should I trust to buy a condo?"',
+      ],
+      aiNote: 'AI tools respond with a short list of recommendations.',
+      highlightStrong: 'AI chooses a few — not showing up means missing the opportunity.',
+      highlightSub: "If you're not included in that list, you don't get considered.",
+    },
+    whatWeDo: {
+      label: 'Core Service',
+      title: 'We make sure AI recommends you',
+      intro: "RankGeo helps you become one of the realtors that AI tools consistently recommend. We don't just measure — we actively improve your presence across the web so AI systems recognize and trust you.",
+      services: [
+        { icon: '🌐', title: 'Online Presence', desc: 'Strengthen your visibility across the key platforms AI pulls data from.' },
+        { icon: '📣', title: 'Mentions & Citations', desc: 'Increase the number of places across the web where you are referenced and quoted.' },
+        { icon: '✍️', title: 'Content Structure', desc: 'Structure your content so AI systems understand your expertise and recommend you confidently.' },
+        { icon: '🇨🇳', title: 'Bilingual Visibility', desc: 'Optimize your presence in both English and Chinese searches for maximum reach.' },
+        { icon: '🏆', title: 'Competitive Positioning', desc: 'Ensure you appear alongside — and eventually above — top-performing competitors.' },
+        { icon: '📊', title: 'Measurable Results', desc: 'Track exactly how often AI recommends you across real queries, with clear before/after data.' },
+      ],
+      takeaway: '👉 We turn you into a recognizable, trusted entity for AI systems.',
+    },
+    results: {
+      label: 'Results',
+      title: 'What this looks like in practice',
+      before: 'Before',
+      after: 'After',
+      beforeItems: [
+        'Rarely mentioned in AI answers',
+        'Competitors appear more often',
+        'Limited visibility in English queries',
+        'Missing inbound leads from AI-referred clients',
+      ],
+      afterItems: [
+        'Consistently included in AI recommendations',
+        'Appears alongside top agents',
+        'Strong presence in both English and Chinese queries',
+        'A steady flow of AI-referred inbound clients',
+      ],
+      highlight: 'More appearances → more trust → more inbound clients.',
+    },
+    howAI: {
+      label: 'How AI Works',
+      title: 'How AI decides who to recommend',
+      intro: "AI doesn't rank like Google. It recommends based on signals it has encountered across the entire internet.",
+      signals: [
+        { num: '🔁', title: 'Frequency of Mentions', desc: 'How often you are referenced across the internet' },
+        { num: '✔️', title: 'Consistency', desc: 'Whether your information matches across all platforms' },
+        { num: '🎯', title: 'Clear Expertise', desc: 'How clearly your specialization is presented and understood' },
+        { num: '🏛️', title: 'Trusted Sources', desc: 'Your presence in authoritative, trusted publications' },
+        { num: '🌏', title: 'Language Relevance', desc: 'Presence in both English and Chinese language sources' },
+      ],
+      ruleGreen: 'If AI sees you everywhere, it recommends you.',
+      ruleRed: "If it doesn't recognize you, it won't.",
+    },
+    process: {
+      label: 'Our Approach',
+      title: 'How we help you win',
+      steps: [
+        { title: 'Analyze', desc: 'We run real AI queries and measure exactly how often you appear — and how you compare to your competition.' },
+        { title: 'Position', desc: 'We improve how and where you appear online so AI systems recognize you as a trusted, relevant expert.' },
+        { title: 'Amplify', desc: 'We increase your presence across the platforms and sources that AI tools rely on for recommendations.' },
+        { title: 'Monitor', desc: 'We continuously track improvements and adapt to ensure you keep showing up consistently.' },
+      ],
+      ongoingStrong: 'This is ongoing — not a one-time fix.',
+      ongoingSub: 'AI recommendations shift as the web evolves. We keep you ahead.',
+    },
+    diagnostic: {
+      label: 'AI Visibility Check',
+      title: 'Start with a quick AI Visibility Check',
+      intro: "Before we begin, we run a diagnostic to see exactly where you stand — how often you appear in AI answers, where competitors are outperforming you, and which types of searches you're missing.",
+      insightLabel: 'Example Insight Report',
+      youLabel: 'You',
+      youPct: '18% of queries',
+      compLabel: 'Competitor',
+      compPct: '43% of queries',
+      insightNote: '"You are strong in Chinese searches but weak in English recommendations — there is significant untapped opportunity."',
+      cta: 'Get My AI Visibility Report →',
+      subNote: 'Proof, not just a pitch. See real data before committing.',
+    },
+    niche: {
+      label: 'Who We Serve',
+      title: 'Built for Chinese-speaking realtors in Ottawa',
+      intro: 'We specialize in bilingual agents because most are only optimized for one language — and that creates a major visibility gap.',
+      enTitle: 'English Searches',
+      enDesc: "Reach buyers researching in English — the majority of Ottawa's market.",
+      zhTitle: 'Chinese Searches',
+      zhDesc: 'Capture the growing base of Mandarin and Cantonese-speaking buyers searching in their language.',
+      gapStrong: 'Bilingual presence = double the opportunity.',
+      gapSub: 'Most of your competitors are only showing up in one language. We cover both.',
+    },
+    whyUs: {
+      label: 'Why Choose RankGeo',
+      title: 'Why agents work with us',
+      reasons: [
+        { title: 'Real Estate Focused', desc: 'Designed specifically for realtors — not generic marketing tactics repurposed for real estate.' },
+        { title: 'Built for AI Search', desc: 'We focus on how AI recommends, not outdated SEO tactics that no longer drive results.' },
+        { title: 'Bilingual Expertise', desc: 'Deep understanding of English and Chinese markets — rare in Canadian real estate marketing.' },
+        { title: 'Data-Driven', desc: 'Measurable results backed by real query data, not vague promises or vanity metrics.' },
+        { title: 'Real Inbound Leads', desc: 'Our goal is to generate actual client inquiries — not just improve a dashboard number.' },
+      ],
+    },
+    ctaForm: {
+      label: 'Free AI Check',
+      title: 'See how often AI recommends you',
+      intro: "We'll show you exactly where you stand — and how to improve.",
+      nameLbl: 'Your Name',
+      namePh: 'e.g. Sarah Li',
+      websiteLbl: 'Website or Profile URL',
+      websitePh: 'https://yoursite.com',
+      cityLbl: 'City',
+      cityPh: 'Ottawa',
+      cityDefault: 'Ottawa',
+      langLbl: 'Language Focus',
+      langOptions: [
+        { key: 'english', label: 'English' },
+        { key: 'chinese', label: 'Chinese' },
+        { key: 'both', label: 'Both' },
+      ],
+      emailLbl: 'Email Address',
+      emailPh: 'you@example.com',
+      submit: 'Run My AI Check →',
+      subText: 'No technical knowledge needed. Clear, simple insights.',
+      successTitle: "You're on the list!",
+      successMsg: "We'll run your AI visibility check and send results to your email shortly.",
+    },
+    faq: {
+      label: 'FAQ',
+      title: 'Common questions',
+      items: [
+        {
+          q: 'Is this the same as SEO?',
+          a: "No — this is different. SEO focuses on ranking on Google's search results page. We focus on being recommended by AI tools like ChatGPT, Gemini, and Perplexity — a different system with different signals.",
+        },
+        {
+          q: 'How long does it take to see results?',
+          a: "Initial insights from the diagnostic come quickly. Meaningful improvements in how often AI recommends you build over time as your online presence strengthens — typically 4–12 weeks depending on your starting point.",
+        },
+        {
+          q: 'Do I need to change my website?',
+          a: "Not necessarily. We'll assess what changes will have the most impact on your AI visibility and guide you through only the most important ones — no unnecessary overhaul required.",
+        },
+        {
+          q: 'Why focus on both English and Chinese?',
+          a: "Because buyers in Ottawa search in both languages. Most realtors are only visible in one. Covering both means you appear in twice as many relevant AI recommendations — a significant competitive advantage.",
+        },
+        {
+          q: 'What AI tools does this affect?',
+          a: "We focus on the tools your clients actually use: ChatGPT, Google Gemini, and Perplexity. As AI search evolves, we adapt our methods accordingly.",
+        },
+      ],
+    },
+    footer: {
+      tagline: 'AI Visibility. Real Clients. Real Growth.',
+      location: 'Ottawa, Canada',
+      copy: '© 2026 RankGeo. All rights reserved.',
+    },
+  },
+}
