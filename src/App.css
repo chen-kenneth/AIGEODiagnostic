@@ -153,9 +153,11 @@ section.section-dark {
   align-items: center;
 }
 .hero-image {
-  width: 90%;
+  width: 80%;
   max-width: 1000px;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
