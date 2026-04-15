@@ -20,11 +20,6 @@ export default function HowAIWorks() {
             </div>
           ))}
         </div>
-
-        <div className="rule-pair">
-          <div className="rule rule-green">{h.ruleGreen}</div>
-          <div className="rule rule-red">{h.ruleRed}</div>
-        </div>
       </div>
     </section>
   )

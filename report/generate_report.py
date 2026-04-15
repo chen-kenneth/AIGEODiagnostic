@@ -264,6 +264,39 @@ def build_signal_scores(data: dict) -> str:
 """
 
 
+def build_competitor_breakdown(data: dict) -> str:
+    comps = data.get("competitor_breakdown", [])
+    if not comps:
+        return ""
+
+    you = data["visibility_scores"]["you"]
+    you_w = bar_width(you)
+
+    rows = f"""
+        <div class="bar-row">
+          <div class="bar-label">You</div>
+          <div class="bar-track"><div class="bar-fill bar-you" style="width:{you_w}%"></div></div>
+          <div class="bar-value">{you}%</div>
+        </div>"""
+
+    for c in comps:
+        w = bar_width(c["score"], c["max"])
+        rows += f"""
+        <div class="bar-row">
+          <div class="bar-label">{c['name']}</div>
+          <div class="bar-track"><div class="bar-fill bar-top" style="width:{w}%"></div></div>
+          <div class="bar-value">{c['score']}%</div>
+        </div>"""
+
+    return f"""
+<section class="report-section">
+  <h2>Competitor Comparison</h2>
+  <p class="section-desc">How often you appeared versus your top competitors across all tested queries.</p>
+  <div class="bar-chart">{rows}</div>
+</section>
+"""
+
+
 def build_queries_table(data: dict) -> str:
     queries = data.get("top_queries_tested", [])
     if not queries:
@@ -403,8 +436,8 @@ table { border-collapse: collapse; }
 
 .summary-banner { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
 .score-circle { display: flex; flex-direction: column; align-items: center;
-                justify-content: center; width: 110px; height: 110px; border-radius: 50%;
-                border: 4px solid; flex-shrink: 0; text-align: center; }
+                justify-content: center; width: 120px; min-height: 120px; border-radius: 50%;
+                border: 4px solid; flex-shrink: 0; text-align: center; padding: 8px; box-sizing: border-box; }
 .score-circle.good  { border-color: #22c55e; }
 .score-circle.fair  { border-color: #f59e0b; }
 .score-circle.weak  { border-color: #ef4444; }
@@ -530,9 +563,11 @@ table { border-collapse: collapse; }
 @media print {
   body { background: #fff; font-size: 13px; }
   .page-wrap { margin: 0; padding: 0; max-width: 100%; }
-  .report-section { box-shadow: none; break-inside: avoid; }
-  .cta-button { background: #1565d8 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .bar-fill, .score-circle, .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .report-section { box-shadow: none; }
+  .rec-card, .signal-row, .platform-row, .lang-row, .query-row { break-inside: avoid; }
+  .cta-section { break-inside: avoid; }
+  /* Force ALL background colours to print — browsers suppress them by default */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
 }
 
 /* ── Responsive ──────────────────────────── */
@@ -554,6 +589,7 @@ def render_html(data: dict) -> str:
     body = (
         build_header(data)
         + build_visibility_overview(data)
+        + build_competitor_breakdown(data)
         + build_platform_breakdown(data)
         + build_language_breakdown(data)
         + build_signal_scores(data)
@@ -600,7 +636,7 @@ def main() -> None:
     parser.add_argument("input", help="Path to input JSON file (e.g. sample_input.json)")
     parser.add_argument(
         "--out", "-o", default=None,
-        help="Output HTML filename (default: <client_name>_ai_report.html)"
+      help="Output HTML filename (default: outputs/<client_name>_ai_report.html)"
     )
     parser.add_argument(
         "--pdf", action="store_true",
@@ -616,10 +652,11 @@ def main() -> None:
         out_path = args.out
     else:
         safe_name = data["meta"]["client_name"].replace(" ", "_").lower()
-        out_path = f"{safe_name}_ai_report.html"
+        out_path = f"outputs/{safe_name}_ai_report.html"
 
     # Write HTML
     out_full = Path(out_path)
+    out_full.parent.mkdir(parents=True, exist_ok=True)
     out_full.write_text(html, encoding="utf-8")
     print(f"Report saved → {out_full.resolve()}")
 

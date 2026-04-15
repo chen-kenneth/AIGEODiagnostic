@@ -1,24 +1,13 @@
-import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 
 export default function Nav() {
-  const [logoError, setLogoError] = useState(false)
   const { lang, toggle, t } = useLang()
 
   return (
     <nav className="nav">
       <div className="nav-inner">
         <a href="#" className="nav-logo">
-          {logoError ? (
-            <span className="nav-logo-text">Rank<span>Geo</span>.ca</span>
-          ) : (
-            <img
-              src="/logo-en.png"
-              alt="RankGeo"
-              style={{ height: '46px', width: 'auto' }}
-              onError={() => setLogoError(true)}
-            />
-          )}
+          <span className="nav-logo-text">Rank<span>Geo</span>.ca</span>
         </a>
         <div className="nav-right">
           <div className="lang-toggle-nav">

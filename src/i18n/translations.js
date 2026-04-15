@@ -19,6 +19,14 @@ export const translations = {
     },
     hero: {
       badge: '✦ 房产经纪人AI搜索优化',
+      heroTitle: '优排智能',
+      heroSubtitle: '让AI推荐你，而不只是找到你',
+      heroTagline: 'AI Visibility. Real Clients. Real Growth.',
+      featureButtons: [
+        'AI搜索优化',
+        'GEO优化',
+        'AI可见度提升',
+      ],
       headlinePre: '当买家向AI询问时，让',
       headlineHighlight: '您',
       headlinePost: '被推荐',
@@ -36,7 +44,7 @@ export const translations = {
       queries: [
         '"渥太华有哪位好的华人房产经纪人？"',
         '"适合首次购房者的最佳经纪人"',
-        '"买公寓应该信任谁？"',
+        '"谁能帮我出售我的渥太华公寓？"',
       ],
       aiNote: 'AI工具会给出简短的推荐名单。',
       highlightStrong: 'AI只选择少数几个——不出现就意味着错失机会。',
@@ -200,6 +208,14 @@ export const translations = {
     },
     hero: {
       badge: '✦ AI Search Optimization for Realtors',
+      heroTitle: '',
+      heroSubtitle: '',
+      heroTagline: 'AI Visibility. Real Clients. Real Growth.',
+      featureButtons: [
+        'AI Search Optimization',
+        'Geo Optimization',
+        'AI Visibility Growth',
+      ],
       headlinePre: 'Get recommended by AI when buyers ask for a ',
       headlineHighlight: 'realtor',
       headlinePost: '',
@@ -217,7 +233,7 @@ export const translations = {
       queries: [
         '"Who is a good Chinese realtor in Ottawa?"',
         '"Best agent for first-time home buyers"',
-        '"Who should I trust to buy a condo?"',
+        '"Who can help me sell my Ottawa condo?"',
       ],
       aiNote: 'AI tools respond with a short list of recommendations.',
       highlightStrong: 'AI chooses a few — not showing up means missing the opportunity.',

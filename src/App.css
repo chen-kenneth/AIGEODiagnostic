@@ -145,34 +145,18 @@ section.section-dark {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 60%, #0a1e3d 100%);
-  padding: 110px 0 90px;
+  background: var(--white);
+  padding: 20px;
   position: relative; overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 70% 50%,
-    rgba(21, 101, 216, 0.22) 0%, transparent 60%);
-  pointer-events: none;
-}
-.hero-inner {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 60px; align-items: center;
-  position: relative;
-}
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.3);
-  color: var(--green-lt); font-size: .8rem; font-weight: 600;
-  padding: 6px 14px; border-radius: 20px; margin-bottom: 24px;
-}
-.hero-headline { color: var(--white); margin-bottom: 20px; }
-.hero-headline span { color: var(--green-lt); }
-.hero-sub {
-  color: rgba(255, 255, 255, 0.65); font-size: 1.1rem;
-  margin-bottom: 36px; max-width: 480px;
+.hero-image {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
 }
 
 .tagline-strip {

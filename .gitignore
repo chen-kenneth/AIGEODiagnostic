@@ -3,6 +3,30 @@ dist
 .DS_Store
 *.local
 
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
 # Generated report outputs
+report/outputs/
 report/*_ai_report.html
 report/*.pdf
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+.env.local
+
