@@ -11,10 +11,10 @@ export const realtors = {
   // ─────────────────────────── CHINESE (default) ───────────────────────────
   zh: {
     meta: {
-      title: 'RankGeo | 渥太华华人地产经纪的 AI 搜索可见度优化',
+      title: 'RankGeo | 加拿大华人地产经纪的 AI 搜索可见度优化',
       description:
-        'RankGeo 帮助渥太华华语房产经纪人了解自己在 ChatGPT、Perplexity、Gemini 等 AI 工具中的可见度，并用可验证的方法提升被提及的机会。中英双语优化，每月复测。先免费做一次 AI 可见度检测。',
-      ogTitle: 'RankGeo | 让 AI 提及你 — 渥太华华人地产经纪 AI 可见度优化',
+        'RankGeo 帮助加拿大华语房产经纪人了解自己在 ChatGPT、Perplexity、Gemini 等 AI 工具中的可见度，并用可验证的方法提升被提及的机会。中英双语优化，每月复测。先免费做一次 AI 可见度检测。',
+      ogTitle: 'RankGeo | 让 AI 提及你 — 加拿大华人地产经纪 AI 可见度优化',
       ogDescription:
         '客户不再搜索，他们在问 AI。RankGeo 帮你出现在 AI 的回答里：中英双语优化 + 每月监测报告 + 免费可见度检测。',
     },
@@ -27,14 +27,14 @@ export const realtors = {
       brand: '优排智能',
       brandSub: 'RankGeo',
       headline: '当客户问 AI 推荐哪位地产经纪时，你的名字会出现吗？',
-      sub: 'RankGeo 帮助渥太华地产经纪了解自己在 ChatGPT、Gemini、Perplexity 等 AI 工具中的可见度，并用可验证的方法提升被提及的机会。先免费做一次 AI 可见度检测，再决定。',
+      sub: 'RankGeo 帮助加拿大地产经纪了解自己在 ChatGPT、Gemini、Perplexity 等 AI 工具中的可见度，并用可验证的方法提升被提及的机会。先免费做一次 AI 可见度检测，再决定。',
       cta: '免费检测我的 AI 可见度 →',
       ctaSecondary: '查看检测报告示例',
       demoBadge: '模拟演示',
       demoTitle: '买家实际看到的，可能是这样的回答',
-      demoQuery: '"渥太华最好的华人房产经纪人"',
+      demoQuery: '"加拿大最好的华人房产经纪人"',
       demoAnswer: [
-        '根据网络公开信息，在渥太华华人买家相关的问答和评价中，以下经纪人被较为频繁地提及：',
+        '根据网络公开信息，在加拿大华人买家相关的问答和评价中，以下经纪人被较为频繁地提及：',
       ],
       demoEntries: [
         { name: '示例经纪人 A', note: '中英双语评价覆盖较全' },
@@ -77,9 +77,9 @@ export const realtors = {
       title: '客户不再搜索——他们在问 AI',
       intro: '当今的买家不再逐条看 Google 搜索结果，他们会直接提问：',
       queries: [
-        '"渥太华有哪位好的华人房产经纪人？"',
+        '"加拿大有哪位好的华人房产经纪人？"',
         '"适合首次购房者的最佳经纪人"',
-        '"谁能帮我出售我的渥太华公寓？"',
+        '"谁能帮我出售我的公寓？"',
       ],
       aiNote: 'AI 工具会给出简短的推荐名单。',
       highlightStrong: 'AI 只列出少数几个名字——不在名单里，就等于错失机会。',
@@ -99,9 +99,9 @@ export const realtors = {
       tableTitle: '部分查询摘录（示意数据）',
       tableHead: ['买家查询', 'ChatGPT', 'Perplexity', 'Gemini', 'Claude'],
       tableRows: [
-        ['渥太华华人买房经纪推荐', '未提及', '未提及', '提及', '未提及'],
-        ['Ottawa best realtor for first-time buyer', '未提及', '未提及', '未提及', '未提及'],
-        ['渥太华公寓出售找谁', '提及', '未提及', '提及', '未提及'],
+        ['加拿大华人买房经纪推荐', '未提及', '未提及', '提及', '未提及'],
+        ['Canada best realtor for first-time buyer', '未提及', '未提及', '未提及', '未提及'],
+        ['加拿大公寓出售找谁', '提及', '未提及', '提及', '未提及'],
       ],
       insightTitle: '报告给出的关键判断（示意数据）',
       insightBody:
@@ -185,10 +185,10 @@ export const realtors = {
     },
     niche: {
       label: '我们服务的对象',
-      title: '专为渥太华华语房产经纪人打造',
+      title: '专为加拿大华语房产经纪人打造',
       intro: '我们专注于双语经纪人，因为大多数人只针对一种语言进行优化——这造成了显著的可见度缺口。',
       enTitle: '英文搜索',
-      enDesc: '覆盖以英文搜索的买家——渥太华市场的主要群体。',
+      enDesc: '覆盖以英文搜索的买家——加拿大市场的主要群体。',
       zhTitle: '中文搜索',
       zhDesc: '吸引越来越多以母语搜索的普通话和粤语买家。',
       gapStrong: '双语存在 = 双倍机会',
@@ -196,14 +196,14 @@ export const realtors = {
     },
     about: {
       label: '关于 RankGeo',
-      title: '一人工作室，只专注一件事',
-      body: 'RankGeo 是位于加拿大渥太华的一人 GEO 咨询工作室，专注帮助华语地产经纪提升在 AI 搜索中的可见度。我们相信小而深：不做全案营销，只做 AI 可见度这一件事，用真实查询数据说话，用每月复测验证效果。',
+      title: '一个工作室，只专注一件事',
+      body: 'RankGeo 是加拿大的 GEO 咨询工作室，专注帮助华语地产经纪提升在 AI 搜索中的可见度。我们相信小而深：不做全案营销，只做 AI 可见度这一件事，用真实查询数据说话，用每月复测验证效果。',
       points: [
         { title: '实测而非估计', desc: '48 个模拟买家查询 × ChatGPT、Perplexity、Gemini、Claude 四个引擎，不用估计，用实测。' },
         { title: '中英双语', desc: '同时覆盖英文与中文买家群体——这是大多数经纪人的盲区。' },
         { title: '数据验证', desc: '每月同一方法复测，提及率趋势是最诚实的成绩单。' },
       ],
-      location: '加拿大渥太华 · 服务华语地产经纪',
+      location: '加拿大 · 服务华语地产经纪',
     },
     articles: {
       label: '原创研究',
@@ -235,8 +235,8 @@ export const realtors = {
       websiteLbl: '网站或主页链接',
       websitePh: 'https://yoursite.com',
       cityLbl: '城市',
-      cityPh: '渥太华',
-      cityDefault: '渥太华',
+      cityPh: '你所在的城市',
+      cityDefault: '',
       langLbl: '语言重点',
       langOptions: [
         { key: 'english', label: '英文' },
@@ -273,7 +273,7 @@ export const realtors = {
         },
         {
           q: '为什么要同时关注英文和中文？',
-          a: '因为渥太华买家两种语言都用。大多数经纪人只在一种语言中可见，同时覆盖两者意味着出现在更多 AI 回答中，这是显著的竞争优势。',
+          a: '因为加拿大华人买家两种语言都用。大多数经纪人只在一种语言中可见，同时覆盖两者意味着出现在更多 AI 回答中，这是显著的竞争优势。',
         },
         {
           q: '这会影响哪些 AI 工具？',
@@ -297,7 +297,7 @@ export const realtors = {
     },
     footer: {
       tagline: 'AI 可见度 · 真实客户 · 真实增长',
-      location: '加拿大渥太华',
+      location: '加拿大',
       articles: '专栏',
       privacy: '隐私政策',
       copy: '© 2026 RankGeo. 保留所有权利。',
@@ -307,10 +307,10 @@ export const realtors = {
   // ─────────────────────────── ENGLISH ─────────────────────────────────────
   en: {
     meta: {
-      title: 'RankGeo | AI Search Visibility for Ottawa Chinese-Speaking Realtors',
+      title: 'RankGeo | AI Search Visibility for Chinese-Speaking Realtors in Canada',
       description:
-        'RankGeo helps Ottawa Chinese-speaking realtors understand their visibility in ChatGPT, Perplexity, Gemini and other AI tools — and improve the odds of being mentioned with verifiable methods. Bilingual optimization, monthly re-testing. Start with a free AI visibility check.',
-      ogTitle: 'RankGeo | Get Mentioned by AI — AI Visibility for Ottawa Realtors',
+        'RankGeo helps Chinese-speaking realtors in Canada understand their visibility in ChatGPT, Perplexity, Gemini and other AI tools — and improve the odds of being mentioned with verifiable methods. Bilingual optimization, monthly re-testing. Start with a free AI visibility check.',
+      ogTitle: 'RankGeo | Get Mentioned by AI — AI Visibility for Realtors in Canada',
       ogDescription:
         'Clients no longer search — they ask AI. RankGeo gets you into AI answers: bilingual optimization + monthly monitoring reports + free visibility check.',
     },
@@ -323,14 +323,14 @@ export const realtors = {
       brand: '优排智能',
       brandSub: 'RankGeo',
       headline: 'When buyers ask AI which realtor to trust, does your name come up?',
-      sub: 'RankGeo helps Ottawa realtors understand their visibility in ChatGPT, Gemini, Perplexity and other AI tools — and improve the odds of being mentioned with methods you can verify. Start with a free AI visibility check.',
+      sub: 'RankGeo helps realtors in Canada understand their visibility in ChatGPT, Gemini, Perplexity and other AI tools — and improve the odds of being mentioned with methods you can verify. Start with a free AI visibility check.',
       cta: 'Free AI Visibility Check →',
       ctaSecondary: 'See a sample report',
       demoBadge: 'SIMULATED DEMO',
       demoTitle: 'This is what buyers may see in an AI answer',
-      demoQuery: '"Best Chinese realtor in Ottawa"',
+      demoQuery: '"Best Chinese realtor in Canada"',
       demoAnswer: [
-        'Based on publicly available information, the following realtors are frequently mentioned in Ottawa Chinese-buyer discussions:',
+        'Based on publicly available information, the following realtors are frequently mentioned in Canada Chinese-buyer discussions:',
       ],
       demoEntries: [
         { name: 'Sample Agent A', note: 'Strong bilingual review coverage' },
@@ -373,9 +373,9 @@ export const realtors = {
       title: "Clients aren't searching anymore — they're asking AI",
       intro: "Today's buyers don't scroll through Google results. They ask questions like:",
       queries: [
-        '"Who is a good Chinese realtor in Ottawa?"',
+        '"Who is a good Chinese realtor in Canada?"',
         '"Best agent for first-time home buyers"',
-        '"Who can help me sell my Ottawa condo?"',
+        '"Who can help me sell my condo?"',
       ],
       aiNote: 'AI tools respond with a short list of recommendations.',
       highlightStrong: 'AI lists only a few names — not being on that list means missing the opportunity.',
@@ -395,9 +395,9 @@ export const realtors = {
       tableTitle: 'Sample query results (illustrative)',
       tableHead: ['Buyer query', 'ChatGPT', 'Perplexity', 'Gemini', 'Claude'],
       tableRows: [
-        ['渥太华华人买房经纪推荐', 'Not mentioned', 'Not mentioned', 'Mentioned', 'Not mentioned'],
-        ['Ottawa best realtor for first-time buyer', 'Not mentioned', 'Not mentioned', 'Not mentioned', 'Not mentioned'],
-        ['渥太华公寓出售找谁', 'Mentioned', 'Not mentioned', 'Mentioned', 'Not mentioned'],
+        ['加拿大华人买房经纪推荐', 'Not mentioned', 'Not mentioned', 'Mentioned', 'Not mentioned'],
+        ['Canada best realtor for first-time buyer', 'Not mentioned', 'Not mentioned', 'Not mentioned', 'Not mentioned'],
+        ['加拿大公寓出售找谁', 'Mentioned', 'Not mentioned', 'Mentioned', 'Not mentioned'],
       ],
       insightTitle: 'Key finding from the report (illustrative)',
       insightBody:
@@ -481,10 +481,10 @@ export const realtors = {
     },
     niche: {
       label: 'Who We Serve',
-      title: 'Built for Chinese-speaking realtors in Ottawa',
+      title: 'Built for Chinese-speaking realtors in Canada',
       intro: 'We specialize in bilingual agents because most are only optimized for one language — and that creates a major visibility gap.',
       enTitle: 'English Searches',
-      enDesc: "Reach buyers researching in English — the majority of Ottawa's market.",
+      enDesc: "Reach buyers researching in English — the majority of Canada's market.",
       zhTitle: 'Chinese Searches',
       zhDesc: 'Capture the growing base of Mandarin and Cantonese-speaking buyers searching in their language.',
       gapStrong: 'Bilingual presence = double the opportunity.',
@@ -492,14 +492,14 @@ export const realtors = {
     },
     about: {
       label: 'About RankGeo',
-      title: 'A one-person studio focused on one thing',
-      body: 'RankGeo is a one-person GEO consultancy based in Ottawa, Canada, focused on helping Chinese-speaking realtors become more visible in AI search. We believe in small and deep: no full-service marketing, just AI visibility — measured with real query data and verified with monthly re-tests.',
+      title: 'A studio focused on one thing',
+      body: 'RankGeo is a GEO consultancy based in Canada, focused on helping Chinese-speaking realtors become more visible in AI search. We believe in small and deep: no full-service marketing, just AI visibility — measured with real query data and verified with monthly re-tests.',
       points: [
         { title: 'Measured, not estimated', desc: '48 simulated buyer queries × 4 engines (ChatGPT, Perplexity, Gemini, Claude). Measured, not estimated.' },
         { title: 'Bilingual', desc: 'Covering English and Chinese buyer groups — the blind spot of most realtors.' },
         { title: 'Verified by data', desc: 'Same-method monthly re-tests; mention-rate trends are the honest report card.' },
       ],
-      location: 'Ottawa, Canada · Serving Chinese-speaking realtors',
+      location: 'Canada · Serving Chinese-speaking realtors',
     },
     articles: {
       label: 'Original research',
@@ -531,8 +531,8 @@ export const realtors = {
       websiteLbl: 'Website or Profile URL',
       websitePh: 'https://yoursite.com',
       cityLbl: 'City',
-      cityPh: 'Ottawa',
-      cityDefault: 'Ottawa',
+      cityPh: 'Your city',
+      cityDefault: '',
       langLbl: 'Language Focus',
       langOptions: [
         { key: 'english', label: 'English' },
@@ -569,7 +569,7 @@ export const realtors = {
         },
         {
           q: 'Why focus on both English and Chinese?',
-          a: 'Because buyers in Ottawa search in both languages. Most realtors are only visible in one. Covering both means appearing in more AI answers — a significant competitive advantage.',
+          a: 'Because Chinese buyers in Canada search in both languages. Most realtors are only visible in one. Covering both means appearing in more AI answers — a significant competitive advantage.',
         },
         {
           q: 'Which AI tools does this cover?',
@@ -593,7 +593,7 @@ export const realtors = {
     },
     footer: {
       tagline: 'AI Visibility. Real Clients. Real Growth.',
-      location: 'Ottawa, Canada',
+      location: 'Canada',
       articles: 'Blog (中文)',
       privacy: 'Privacy Policy',
       copy: '© 2026 RankGeo. All rights reserved.',
