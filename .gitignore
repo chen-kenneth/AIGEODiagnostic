@@ -30,3 +30,6 @@ __pycache__/
 .env
 .env.local
 
+
+# 预渲染中间产物
+dist-ssr/
