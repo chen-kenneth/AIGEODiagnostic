@@ -32,9 +32,9 @@ export const realtors = {
       ctaSecondary: '查看检测报告示例',
       demoBadge: '模拟演示',
       demoTitle: '买家实际看到的，可能是这样的回答',
-      demoQuery: '"加拿大最好的华人房产经纪人"',
+      demoQuery: '"渥太华买房找哪个华人经纪？ "',
       demoAnswer: [
-        '根据网络公开信息，在加拿大华人买家相关的问答和评价中，以下经纪人被较为频繁地提及：',
+        '根据网络公开信息，在渥太华华人买家相关的问答和评价中，以下经纪人被较为频繁地提及：',
       ],
       demoEntries: [
         { name: '示例经纪人 A', note: '中英双语评价覆盖较全' },
@@ -78,8 +78,8 @@ export const realtors = {
       intro: '当今的买家不再逐条看 Google 搜索结果，他们会直接提问：',
       queries: [
         '"加拿大有哪位好的华人房产经纪人？"',
-        '"适合首次购房者的最佳经纪人"',
-        '"谁能帮我出售我的公寓？"',
+        '"在渥太华买个商业地产哪位华人经纪口碑好？"',
+        '"我想出租渥太华市中心的公寓找哪位经纪？"',
       ],
       aiNote: 'AI 工具会给出简短的推荐名单。',
       highlightStrong: 'AI 只列出少数几个名字——不在名单里，就等于错失机会。',
@@ -328,9 +328,9 @@ export const realtors = {
       ctaSecondary: 'See a sample report',
       demoBadge: 'SIMULATED DEMO',
       demoTitle: 'This is what buyers may see in an AI answer',
-      demoQuery: '"Best Chinese realtor in Canada"',
+      demoQuery: '"Which Chinese realtor should I use to buy a house in Ottawa?"',
       demoAnswer: [
-        'Based on publicly available information, the following realtors are frequently mentioned in Canada Chinese-buyer discussions:',
+        'Based on publicly available information, the following realtors are frequently mentioned in Ottawa Chinese-buyer discussions:',
       ],
       demoEntries: [
         { name: 'Sample Agent A', note: 'Strong bilingual review coverage' },
@@ -374,8 +374,8 @@ export const realtors = {
       intro: "Today's buyers don't scroll through Google results. They ask questions like:",
       queries: [
         '"Who is a good Chinese realtor in Canada?"',
-        '"Best agent for first-time home buyers"',
-        '"Who can help me sell my condo?"',
+        '"Which Chinese realtor in Ottawa is reputable for commercial property?"',
+        '"Which realtor should I use to rent out my downtown Ottawa condo?"',
       ],
       aiNote: 'AI tools respond with a short list of recommendations.',
       highlightStrong: 'AI lists only a few names — not being on that list means missing the opportunity.',
