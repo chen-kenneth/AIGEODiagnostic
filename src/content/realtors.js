@@ -16,7 +16,7 @@ export const realtors = {
         'RankGeo 帮助加拿大华语房产经纪人了解自己在 ChatGPT、Perplexity、Gemini 等 AI 工具中的可见度，并用可验证的方法提升被提及的机会。中英双语优化，每月复测。先免费做一次 AI 可见度检测。',
       ogTitle: 'RankGeo | 让 AI 提及你 — 加拿大华人地产经纪 AI 可见度优化',
       ogDescription:
-        '客户不再搜索，他们在问 AI。RankGeo 帮你出现在 AI 的回答里：中英双语优化 + 每月监测报告 + 免费可见度检测。',
+        '客户越来越少逐条翻搜索结果，他们直接问 AI。RankGeo 帮你出现在 AI 的回答里：中英双语优化 + 每月监测报告 + 免费可见度检测。',
     },
     nav: {
       cta: '免费检测我的 AI 可见度',
@@ -59,7 +59,7 @@ export const realtors = {
         {
           stat: '68%',
           title: '的 Google 搜索以零点击结束（2026 年初）',
-          body: '用户直接在 AI 回答里得到答案，不再点开网页（SparkToro / Similarweb，2026 年 1–4 月，美国数据；2024 年为 58.5%）。传统 SEO 争的是排名，AI 时代争的是"被写进答案里"。不在答案里，就错过了被看见的机会。',
+          body: '零点击的原因很多（精选摘要、知识面板等），AI 回答是增长最快的新推手（SparkToro / Similarweb，2026 年 1–4 月，美国数据；2024 年为 58.5%）。传统 SEO 争的是排名，AI 时代还要争"被写进答案里"。不在答案里，就错过了被看见的机会。',
           source: '来源：SparkToro / Similarweb，2026',
           caveat: '美国全品类 Google 搜索数据',
         },
@@ -74,7 +74,7 @@ export const realtors = {
     },
     shift: {
       label: '行业转变',
-      title: '客户不再搜索——他们在问 AI',
+      title: '客户越来越少翻搜索结果——他们在问 AI',
       intro: '当今的买家不再逐条看 Google 搜索结果，他们会直接提问：',
       queries: [
         '"渥太华有哪位好的华人房产经纪人？"',
@@ -173,7 +173,7 @@ export const realtors = {
       label: 'AI 可见度检测',
       title: '先免费做一次 AI 可见度检测',
       intro:
-        '在开始之前，我们先运行一次检测，了解你的现状：你在 AI 回答中出现的频率、竞争者在哪些方面领先、你错过了哪类查询。检测免费，报告会发到你的邮箱。',
+        '在开始之前，我们先运行一次免费简化检测，了解你的现状：你在 AI 回答中出现的频率、竞争者在哪些方面领先、你错过了哪类查询。免费版为一页摘要；完整版覆盖 48 个模拟买家查询 × 4 个 AI 引擎，每月复测。报告会发到你的邮箱。',
       insightLabel: '示例洞察报告',
       youLabel: '你',
       youPct: '18% 的相关查询',
@@ -290,8 +290,8 @@ export const realtors = {
       updated: '最后更新：2026 年 10 月',
       body: [
         'RankGeo（rankgeo.ca）仅收集你主动提供的信息：姓名、邮箱、网站链接、城市，用于运行你申请的免费 AI 可见度检测并发送报告。',
-        '我们不会出售、出租或分享你的个人信息，不会向你发送与检测无关的营销邮件。',
-        '网站使用隐私友好的访问统计（不含跨站追踪），仅用于了解哪些内容受欢迎。',
+        '你提交的表单信息由 Formspree 处理（用于发送检测报告）。我们不会出售或出租你的个人信息，也不会向你发送与检测无关的营销邮件。',
+        '网站使用 Plausible 进行隐私友好的访问统计（无跨站追踪、不识别个人身份），仅用于了解哪些内容受欢迎。',
         '如需删除你的信息，请邮件联系，我们会在收到请求后删除。',
       ],
     },
@@ -312,7 +312,7 @@ export const realtors = {
         'RankGeo helps Chinese-speaking realtors in Canada understand their visibility in ChatGPT, Perplexity, Gemini and other AI tools — and improve the odds of being mentioned with verifiable methods. Bilingual optimization, monthly re-testing. Start with a free AI visibility check.',
       ogTitle: 'RankGeo | Get Mentioned by AI — AI Visibility for Realtors in Canada',
       ogDescription:
-        'Clients no longer search — they ask AI. RankGeo gets you into AI answers: bilingual optimization + monthly monitoring reports + free visibility check.',
+        'Clients are scrolling search results less and asking AI more. RankGeo gets you into AI answers: bilingual optimization + monthly monitoring reports + free visibility check.',
     },
     nav: {
       cta: 'Free AI Visibility Check',
@@ -355,7 +355,7 @@ export const realtors = {
         {
           stat: '68%',
           title: 'of Google searches ended with zero clicks (early 2026)',
-          body: 'Users get their answer directly inside AI responses and never open a webpage (SparkToro / Similarweb, Jan–Apr 2026, US data; 58.5% in 2024). Traditional SEO fights for rankings; the AI era fights for "being written into the answer."',
+          body: 'Zero-click has many causes (featured snippets, knowledge panels); AI answers are the fastest-growing new driver (SparkToro / Similarweb, Jan–Apr 2026, US data; 58.5% in 2024). Traditional SEO fights for rankings; the AI era also fights for "being written into the answer."',
           source: 'Source: SparkToro / Similarweb, 2026',
           caveat: 'US all-category Google search data',
         },
@@ -469,7 +469,7 @@ export const realtors = {
       label: 'AI Visibility Check',
       title: 'Start with a free AI visibility check',
       intro:
-        "Before anything else, we run a check to see where you stand: how often you appear in AI answers, where competitors lead, and which queries you miss. The check is free; the report goes to your inbox.",
+        "Before anything else, we run a free simplified check to see where you stand: how often you appear in AI answers, where competitors lead, and which queries you miss. The free version is a one-page summary; the full version covers 48 simulated buyer queries × 4 AI engines with monthly re-testing. The report goes to your inbox.",
       insightLabel: 'Example Insight Report',
       youLabel: 'You',
       youPct: '18% of relevant queries',
@@ -586,8 +586,8 @@ export const realtors = {
       updated: 'Last updated: October 2026',
       body: [
         'RankGeo (rankgeo.ca) only collects information you provide voluntarily: name, email, website URL, and city — used solely to run the free AI visibility check you requested and send you the report.',
-        'We do not sell, rent, or share your personal information, and we do not send marketing emails unrelated to your check.',
-        'The site uses privacy-friendly analytics (no cross-site tracking) only to understand which content is useful.',
+        'Form data you submit is processed by Formspree (to deliver your visibility report). We do not sell or rent your personal information, and we do not send marketing emails unrelated to your check.',
+        'The site uses Plausible for privacy-friendly analytics (no cross-site tracking, no personal identification), solely to understand which content is useful.',
         'To delete your information, email us and we will remove it upon request.',
       ],
     },

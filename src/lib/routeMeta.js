@@ -2,7 +2,8 @@ import { realtors } from '../content/realtors.js'
 import { getArticles, getArticle } from './articles.js'
 
 const BASE = 'https://www.rankgeo.ca'
-const OG_IMAGE = `${BASE}/hero-cn.png`
+const OG_IMAGE_CN = `${BASE}/hero-cn.png`
+const OG_IMAGE_EN = `${BASE}/hero-en.png`
 const LOGO_IMAGE = `${BASE}/logo-en-maple.png`
 
 export function routeLang(path) {
@@ -68,6 +69,30 @@ function faqSchema(lang) {
   }
 }
 
+function webPageSchema(name, url, lang) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name,
+    url,
+    inLanguage: lang === 'zh' ? 'zh-CN' : 'en',
+    isPartOf: { '@type': 'WebSite', name: 'RankGeo', url: `${BASE}/` },
+  }
+}
+
+function breadcrumbSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: it.url,
+    })),
+  }
+}
+
 /** 每路由的完整 <head> 内容（title/meta/OG/canonical/hreflang/JSON-LD/统计） */
 export function headFor(path) {
   const lang = routeLang(path)
@@ -89,6 +114,7 @@ export function headFor(path) {
       url: `${BASE}/`,
       inLanguage: lang === 'zh' ? 'zh-CN' : 'en',
     })
+    schemas.push(webPageSchema(title, canonical, lang))
   } else if (path === '/articles') {
     title = `${t.articles.title} | RankGeo`
     description = t.articles.intro
@@ -108,6 +134,11 @@ export function headFor(path) {
         })),
       },
     })
+    schemas.push(webPageSchema(title, canonical, lang))
+    schemas.push(breadcrumbSchema([
+      { name: 'RankGeo', url: `${BASE}/` },
+      { name: title.replace(' | RankGeo', ''), url: canonical },
+    ]))
   } else if (articleMatch) {
     const a = getArticle(articleMatch[1], 'zh')
     if (a) {
@@ -120,7 +151,7 @@ export function headFor(path) {
           '@type': 'Article',
           headline: a.title,
           description: a.description,
-          image: a.image || OG_IMAGE,
+          image: a.image || OG_IMAGE_CN,
           datePublished: a.date,
           dateModified: a.dateModified,
           author: { '@type': 'Organization', name: 'RankGeo', url: `${BASE}/` },
@@ -128,6 +159,12 @@ export function headFor(path) {
           inLanguage: 'zh-CN',
           mainEntityOfPage: canonical,
         },
+        webPageSchema(title, canonical, 'zh'),
+        breadcrumbSchema([
+          { name: 'RankGeo', url: `${BASE}/` },
+          { name: t.articles.title, url: `${BASE}/articles/` },
+          { name: a.title, url: canonical },
+        ]),
       ]
     }
   } else if (path === '/privacy' || path === '/en/privacy') {
@@ -167,7 +204,7 @@ export function headFor(path) {
     `<meta property="og:description" content="${esc(lang === 'zh' ? t.meta.ogDescription : description)}" />`,
     `<meta property="og:type" content="${ogType}" />`,
     `<meta property="og:url" content="${canonical}" />`,
-    `<meta property="og:image" content="${OG_IMAGE}" />`,
+    `<meta property="og:image" content="${lang === 'zh' ? OG_IMAGE_CN : OG_IMAGE_EN}" />`,
     `<meta property="og:locale" content="${lang === 'zh' ? 'zh_CN' : 'en_US'}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     hreflang,

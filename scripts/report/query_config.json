@@ -1,0 +1,125 @@
+{
+  "model": "gpt-5.3-chat-latest",
+  "fallback_model": "gpt-4o",
+  "temperature": 0.3,
+  "max_tokens": 1200,
+  "system_prompt": "You are a helpful local real estate assistant. When asked about realtors, provide a concise list of recommended agents with their names clearly stated. Do not add disclaimers about not being able to verify current information — just give your best answer based on what you know.",
+  "sample_queries": [
+    "Best Chinese real estate agents Ottawa",
+    "Chinese realtors Ottawa",
+    "Mandarin-speaking realtors Ottawa",
+    "Best bilingual realtor Ottawa",
+    "Who should I use to buy a house in Ottawa as a Chinese immigrant",
+    "Ottawa realtor for first-time Chinese home buyers",
+    "Recommend a real estate agent in Ottawa who speaks Chinese",
+    "Top rated Chinese real estate agent in Ottawa",
+    "Ottawa real estate agent for newcomers from China",
+    "Chinese realtor to sell house in Ottawa"
+  ],
+  "background_query_groups": {
+    "direct_recommendation": [
+      "best Mandarin-speaking real estate agent in Ottawa Canada",
+      "top Chinese property agent Ottawa Ontario recommendations",
+      "who are the most trusted Chinese realtors in Ottawa",
+      "highly rated Chinese real estate agents Ottawa Canada",
+      "which Chinese realtor in Ottawa has the best reviews"
+    ],
+    "first_time_newcomer": [
+      "who helps Chinese newcomers buy homes in Ottawa Canada",
+      "Ottawa property agent for Chinese families moving from abroad",
+      "real estate help Ottawa for Mandarin-speaking first time buyers",
+      "best realtor in Ottawa for Chinese international buyers",
+      "who can guide Chinese immigrants buying property in Ottawa"
+    ],
+    "conversational": [
+      "I'm looking for a Chinese-speaking realtor in Ottawa, any suggestions?",
+      "who would you recommend if I want to buy a home in Ottawa and speak Mandarin?",
+      "are there any good Chinese real estate agents in Ottawa?",
+      "can you suggest a realtor in Ottawa who understands Chinese clients?",
+      "I need help finding a bilingual realtor in Ottawa, who should I contact?"
+    ],
+    "selling_listing": [
+      "best Chinese agent to list my property in Ottawa",
+      "who can help Chinese homeowners sell their house in Ottawa",
+      "Ottawa listing agent who speaks Mandarin or Cantonese",
+      "recommend a realtor in Ottawa for selling a home Chinese speaking",
+      "top Ottawa real estate agent for Chinese sellers"
+    ],
+    "comparison_evaluation": [
+      "which Ottawa realtor is better for Chinese buyers",
+      "compare top Chinese realtors in Ottawa Canada",
+      "who ranks highest among Chinese real estate agents in Ottawa",
+      "Ottawa real estate agents comparison for Chinese clients",
+      "who are the leading Chinese realtors in Ottawa right now"
+    ],
+    "bilingual_language": [
+      "real estate agent Ottawa fluent in Mandarin and English",
+      "find a Cantonese-speaking realtor in Ottawa Canada",
+      "Ottawa housing agent who speaks Chinese and English fluently",
+      "Mandarin real estate expert Ottawa recommendations",
+      "Chinese language real estate services Ottawa agent"
+    ],
+    "property_type_use_case": [
+      "Chinese realtor Ottawa for buying a downtown condo",
+      "real estate agent Ottawa Chinese for investment properties",
+      "who helps Chinese buyers purchase townhomes in Ottawa",
+      "Ottawa agent for Chinese clients buying rental properties",
+      "Chinese-speaking realtor Ottawa for luxury homes"
+    ],
+    "chinese_simplified": [
+      "渥太华 华人 房产经纪 哪个比较好",
+      "渥太华 中文地产经纪 推荐谁",
+      "渥太华 买房 找 华人中介",
+      "渥太华 哪个房地产经纪会说中文",
+      "渥太华 华人地产经纪 哪家靠谱"
+    ],
+    "mixed_language": [
+      "Ottawa 买房 Chinese realtor 推荐",
+      "Chinese speaking agent 渥太华 recommendation",
+      "Mandarin realtor Ottawa 推荐 哪个好",
+      "渥太华 real estate agent 华人 推荐",
+      "best realtor 渥太华 华人 agent"
+    ]
+  },
+  "client_names": [
+    "Haiyun Wang"
+  ],
+  "tracked_names": [
+    "Haiyun Wang",
+    "Jun Yu",
+    "Helen Tang",
+    "Jason Chen",
+    "Lei Guo",
+    "Lucy Lu",
+    "Guan Guan",
+    "Tingting Liu",
+    "Aaron Xu",
+    "Yong Ling",
+    "Wei-Ling Tan",
+    "Joe Chan",
+    "Bo Yu",
+    "Frank Chen",
+    "Cindy Zhou",
+    "Raymond Chin",
+    "Grace Sun",
+    "Paul Dong",
+    "Cathy Wang",
+    "Michael Chen",
+    "Helen Wang",
+    "David Li",
+    "Lily Xu",
+    "Nancy Zhu",
+    "Michael Wang",
+    "Henry Shi",
+    "Michael Zhang",
+    "David Sun",
+    "Sophie Chen",
+    "Jason Zhang",
+    "Kevin Wu",
+    "Jenny Wang",
+    "Leo Li",
+    "Lily Li",
+    "Lucy Sun",
+    "Peter Zhang"
+  ]
+}
