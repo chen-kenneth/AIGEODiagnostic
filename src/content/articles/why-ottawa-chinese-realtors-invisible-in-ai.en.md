@@ -15,7 +15,7 @@ This is the most distinctive "invisibility" pattern for Chinese-speaking realtor
 
 Many realtors have plenty of Chinese-language content: WeChat public accounts, Xiaohongshu, Chinese websites. But in the English-language world, barely a trace: no English profile page, no English reviews, never mentioned by English media or local sites. The reverse is equally true — realtors who market only in English are invisible in Chinese queries.
 
-AI organizes knowledge by language. When a buyer asks in English, it searches English sources for answers; in Chinese, Chinese sources. And Ottawa buyers use both. Covering only one language means voluntarily giving up half your chances of being asked about.
+AI organizes knowledge by language. When a buyer asks in English, it searches English sources for answers; in Chinese, Chinese sources. And Ottawa buyers use both. Covering only one language means voluntarily missing opportunities from queries in the other.
 
 In one of our 48-query × 4-engine test rounds (anonymized), a realtor was occasionally mentioned in Chinese queries but had a zero mention rate in English queries — the AI didn't "skip" him; it simply didn't know him in the English-language world.
 

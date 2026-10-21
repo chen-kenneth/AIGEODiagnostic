@@ -32,7 +32,7 @@ This shift creates new problems:
 
 1. **No rankings to check**: AI answers have no fixed rankings. Ask the same question a few times and the list of mentioned names may differ.
 2. **Different citation logic**: AI composes answers from sources it has "read and trusts." Your website ranking #1 doesn't mean the AI will cite you.
-3. **The bilingual gap**: Ask in Chinese vs. English and the AI may return completely different lists. Covering only one language means giving up half the opportunities.
+3. **The bilingual gap**: Ask in Chinese vs. English and the AI may return completely different lists. Covering only one language means missing out on significant opportunities from the other.
 
 GEO is the methodology built for this new logic.
 

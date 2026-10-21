@@ -218,8 +218,8 @@ export function headFor(path) {
   return [
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}" />`,
-    `<meta property="og:title" content="${esc(lang === 'zh' ? t.meta.ogTitle : title)}" />`,
-    `<meta property="og:description" content="${esc(lang === 'zh' ? t.meta.ogDescription : description)}" />`,
+    `<meta property="og:title" content="${esc(title)}" />`,
+    `<meta property="og:description" content="${esc(description)}" />`,
     `<meta property="og:type" content="${ogType}" />`,
     `<meta property="og:url" content="${canonical}" />`,
     `<meta property="og:image" content="${lang === 'zh' ? OG_IMAGE_CN : OG_IMAGE_EN}" />`,
@@ -227,6 +227,7 @@ export function headFor(path) {
     `<meta name="twitter:card" content="summary_large_image" />`,
     hreflang,
     schemas.map(jsonLd).join('\n    '),
-    `<script defer data-domain="rankgeo.ca" src="https://plausible.io/js/script.js"></script>`,
+    `<script async src="https://plausible.io/js/pa-Gctto-RgecPrA5e2_OdPq.js"></script>`,
+    `<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>`,
   ].join('\n    ')
 }

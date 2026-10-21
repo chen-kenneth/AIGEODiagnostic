@@ -20,13 +20,13 @@ The test starts not from "how realtors wish to be searched," but from "how buyer
 - **Comparison shopping**: "buying in Canada — Chinese-speaking realtor or local realtor?"
 - **City × language combinations**: Toronto, Vancouver, Calgary and other cities, each asked in both Chinese and English
 
-Chinese and English each make up half. Chinese buyers in Canada use both languages — testing only one would miss half of reality.
+Chinese and English each make up half. Chinese buyers in Canada use both languages — testing only one would miss the real picture in the other language.
 
 ## 2. Why 4 AI Engines
 
 We run these 48 queries on ChatGPT, Perplexity, Gemini, and Claude — 192 answers in total.
 
-Four instead of one because citation preferences differ dramatically across engines. An analysis of 3.7 million AI citations found that 91% appeared in only one of ChatGPT, Perplexity, or Google AI Overviews; only 2.37% of URLs were cited by all three for the same question (Kevin Indig / Growth Memo, May 2026). Performing well in one engine doesn't mean you exist in the others — and buyers use all kinds of tools.
+Four instead of one because citation preferences differ dramatically across engines. An analysis of 3.7 million AI citations found that 91% appeared in only one of ChatGPT, Perplexity, or Google AI Overviews; only 2.37% of URLs were cited by all three for the same question (Kevin Indig / [Growth Memo, May 2026](https://www.growth-memo.com/p/the-consensus-gap)). Performing well in one engine doesn't mean you exist in the others — and buyers use all kinds of tools.
 
 ## 3. Mention Rate: How It's Calculated and Read
 
