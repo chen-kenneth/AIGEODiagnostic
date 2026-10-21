@@ -111,7 +111,7 @@ export default function PhoneDemo() {
         <div className="phone-notch" />
         <div className="phone-screen">
           <div className="phone-header">
-            <span className="phone-ai-name">AI 助手</span>
+            <span className="phone-ai-name">{lang === 'zh' ? 'AI 助手' : 'AI Assistant'}</span>
             <span className="phone-badge">{lang === 'zh' ? '模拟演示' : 'Mock demo'}</span>
           </div>
           <div className="phone-chat">
