@@ -16,6 +16,9 @@ export default function Footer() {
       </div>
       <p className="footer-tagline">{f.tagline}</p>
       <p className="footer-location">{f.location}</p>
+      <p className="footer-email">
+        <a href={`mailto:${f.email}`}>{f.email}</a>
+      </p>
       <nav className="footer-links" aria-label="Footer">
         <a href={homePath}>RankGeo</a>
         <a href="/articles">{f.articles}</a>

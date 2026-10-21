@@ -299,6 +299,7 @@ export const realtors = {
     footer: {
       tagline: 'AI 可见度 · 真实客户 · 真实增长',
       location: '加拿大',
+      email: 'info@rankgeo.ca',
       articles: '专栏',
       privacy: '隐私政策',
       copy: '© 2026 RankGeo. 保留所有权利。',
@@ -596,6 +597,7 @@ export const realtors = {
     footer: {
       tagline: 'AI Visibility. Real Clients. Real Growth.',
       location: 'Canada',
+      email: 'info@rankgeo.ca',
       articles: 'Blog',
       privacy: 'Privacy Policy',
       copy: '© 2026 RankGeo. All rights reserved.',

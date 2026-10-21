@@ -54,6 +54,7 @@ function orgSchema(lang) {
     name: 'RankGeo',
     url: `${BASE}/`,
     logo: LOGO_IMAGE,
+    email: 'info@rankgeo.ca',
     description: realtors[lang].meta.description,
     areaServed: { '@type': 'City', name: 'Ottawa' },
     knowsAbout: ['Generative Engine Optimization', 'AI Search Visibility', 'Real Estate Marketing'],
