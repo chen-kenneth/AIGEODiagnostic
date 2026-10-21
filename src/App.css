@@ -832,9 +832,11 @@ footer {
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .phone-send {
-  width: 32px; height: 32px; border-radius: 50%; background: #2563eb; color: #fff;
+  width: 32px; height: 32px; border-radius: 50%; background: #cbd5e1; color: #fff;
   display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;
+  transition: background .3s;
 }
+.phone-send.active { background: #2563eb; }
 .phone-disclaimer {
   margin-top: 12px; font-size: .72rem; color: rgba(255,255,255,.5); text-align: center;
 }
@@ -859,4 +861,15 @@ footer {
 .footer-cn-name {
   font-size: 2rem; font-weight: 700; color: #fff;
   letter-spacing: 4px; white-space: nowrap; line-height: 1; padding-bottom: 2px;
+}
+
+/* --- 移动端：中文公司名缩小 --- */
+@media (max-width: 640px) {
+  .nav-cn-name { font-size: 1.15rem; letter-spacing: 2px; }
+  .footer-cn-name { font-size: 1.15rem; letter-spacing: 2px; }
+}
+
+@media (max-width: 640px) {
+  .nav-link { display: none; }
+  .nav-right { gap: 8px; }
 }

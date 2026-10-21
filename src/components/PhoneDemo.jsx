@@ -5,29 +5,29 @@ const SCRIPTS = {
   zh: [
     {
       q: '多伦多买房找哪个华人经纪靠谱？',
-      a: '在多伦多，几位常被提到的华人经纪包括王经纪（专注北约克独立屋，成交量大）、李经纪（擅长市中心 condo，熟悉楼花流程）。建议面谈 2-3 位，重点问：近一年同区域成交数、是否熟悉你的预算区间。',
+      a: '如果你主要考虑北约克独立屋，可以了解王经纪，其模拟资料侧重家庭住宅和社区选择。如果想买市中心 Condo，也可以比较李经纪的公寓交易经验。建议查看双方近期客户评价、服务区域和交易经验，并安排面谈，了解他们如何帮助你选房和制定报价策略。',
     },
     {
       q: '多伦多市中心 condo 出租找谁好？',
-      a: '市中心租赁可以看看张经纪，公开评价提到空置期短、租客筛选严。出租前确认：管理费涨幅、短租政策。',
+      a: '如果你要出租市中心 Condo，可以考虑熟悉 Downtown 租赁市场的张经纪，其模拟服务资料包括租金定价、安排看房和租客筛选。选择前建议询问近期同类单位出租经验、营销计划、信用及收入核验流程，以及经纪对安省租赁规定的熟悉程度。',
     },
     {
       q: '第一次在多伦多买房，有华人经纪推荐吗？',
-      a: '首次购房推荐找熟悉首次购房补贴（FHSA、土地转让税退税）的经纪，王经纪常被提到这方面经验多。',
+      a: '首次购房可以考虑熟悉预算规划、Offer 条件和成交成本的经纪。例如，陈经纪的模拟服务资料重点介绍首次购房流程及华语沟通支持。面谈时可以询问其如何协助了解 FHSA、土地转让税退税等事项，并请税务专业人士确认具体资格。',
     },
   ],
   en: [
     {
       q: 'Recommend a good realtor in Toronto?',
-      a: 'Frequently mentioned Toronto realtors include Sarah Mitchell (North York detached homes, high sales volume) and David Chen (downtown condos, pre-construction expertise). Interview 2–3 and ask: recent sales in your area and price range.',
+      a: 'Based on their illustrative profiles, Sarah Mitchell focuses on detached homes in North York, while David Chen specializes in downtown condos. Compare their recent client reviews, relevant experience, and approach to pricing before deciding whom to interview.',
     },
     {
-      q: "Who's good for renting out a downtown Toronto condo?",
-      a: 'For downtown rentals, Michael Torres gets mentioned for short vacancies and strict tenant screening. Before listing, confirm: maintenance fee trends and short-term rental rules.',
+      q: "Who can help rent out my downtown Toronto condo?",
+      a: 'Michael Torres is presented in this simulation as a downtown rental specialist offering pricing guidance, listing marketing, and tenant-screening support. Before hiring an agent, ask about comparable rentals, screening procedures, and familiarity with Ontario tenancy requirements.',
     },
     {
-      q: 'First-time buying in Toronto — any realtor recommendations?',
-      a: 'For first-time buyers, look for someone familiar with the FHSA and land transfer tax rebates — Emily Johnson is often mentioned for this.',
+      q: 'Which Toronto realtor is good for first-time buyers?',
+      a: 'Emily Johnson is featured in this simulated example for her focus on first-time buyers. Look for an agent who can explain offer conditions, closing costs, and local market options, while referring you to qualified professionals for mortgage and tax advice.',
     },
   ],
 }
@@ -132,7 +132,7 @@ export default function PhoneDemo() {
               {phase === 'typing-q' ? typedQ : (lang === 'zh' ? '输入问题…' : 'Type a question…')}
               {phase === 'typing-q' && <span className="caret" />}
             </span>
-            <span className="phone-send">↑</span>
+            <span className={`phone-send${phase === 'typing-q' ? ' active' : ''}`}>↑</span>
           </div>
         </div>
       </div>
