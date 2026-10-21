@@ -15,6 +15,9 @@ export default function Nav() {
           <img src={logoSrc} alt={logoAlt} />
         </a>
         <div className="nav-right">
+          <a href={homePath} className="nav-link">
+            {t.nav.home}
+          </a>
           <a href={lang === 'zh' ? '/articles' : '/articles'} className="nav-link">
             {t.nav.articles}
           </a>

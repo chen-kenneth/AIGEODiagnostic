@@ -21,6 +21,7 @@ export const realtors = {
     nav: {
       cta: '免费检测我的 AI 可见度',
       articles: '专栏',
+      home: '首页',
     },
     hero: {
       badge: '✦ 让AI推荐你，而不只是找到你',
@@ -317,6 +318,7 @@ export const realtors = {
     nav: {
       cta: 'Free AI Visibility Check',
       articles: 'Blog (中文)',
+      home: 'Home',
     },
     hero: {
       badge: '✦ AI Visibility. Real Clients. Real Growth.',
