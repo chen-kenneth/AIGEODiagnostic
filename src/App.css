@@ -847,10 +847,12 @@ footer {
 }
 
 /* --- 中文公司名：优排智能 --- */
-.nav-logo { display: flex; align-items: center; gap: 10px; }
+.nav-logo { display: flex; align-items: flex-end; gap: 12px; }
+.nav-logo img { display: block; }
 .nav-cn-name {
-  font-size: 1.05rem; font-weight: 700; color: #fff;
-  letter-spacing: 2px; white-space: nowrap;
+  font-size: 2rem; font-weight: 700; color: #fff;
+  letter-spacing: 4px; white-space: nowrap; line-height: 1;
+  padding-bottom: 2px;
 }
 .footer-cn-name {
   font-size: 1.3rem; font-weight: 800; color: #fff;
