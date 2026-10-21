@@ -18,16 +18,16 @@ const SCRIPTS = {
   ],
   en: [
     {
-      q: 'Which Chinese-speaking realtor is reliable for buying in Toronto?',
-      a: 'In Toronto, frequently mentioned Chinese-speaking realtors include Agent Wang (North York detached homes, high volume) and Agent Li (downtown condos, pre-construction expertise). Interview 2–3 and ask: recent sales in your area and budget range.',
+      q: 'Recommend a good realtor in Toronto?',
+      a: 'Frequently mentioned Toronto realtors include Sarah Mitchell (North York detached homes, high sales volume) and David Chen (downtown condos, pre-construction expertise). Interview 2–3 and ask: recent sales in your area and price range.',
     },
     {
       q: "Who's good for renting out a downtown Toronto condo?",
-      a: 'For downtown rentals, Agent Zhang gets mentioned for short vacancies and strict tenant screening. Before listing, confirm: maintenance fee trends and short-term rental rules.',
+      a: 'For downtown rentals, Michael Torres gets mentioned for short vacancies and strict tenant screening. Before listing, confirm: maintenance fee trends and short-term rental rules.',
     },
     {
-      q: 'First-time buying in Toronto — any Chinese-speaking realtor recommendations?',
-      a: 'For first-time buyers, look for someone familiar with FHSA and land transfer tax rebates — Agent Wang is often mentioned for this.',
+      q: 'First-time buying in Toronto — any realtor recommendations?',
+      a: 'For first-time buyers, look for someone familiar with the FHSA and land transfer tax rebates — Emily Johnson is often mentioned for this.',
     },
   ],
 }
