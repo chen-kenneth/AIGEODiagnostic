@@ -59,6 +59,10 @@ export function AppShell({ hook }) {
             <Route path="/articles/:slug">
               {params => <ArticlePage slug={params.slug} />}
             </Route>
+            <Route path="/en/articles" component={ArticlesIndex} />
+            <Route path="/en/articles/:slug">
+              {params => <ArticlePage slug={params.slug} />}
+            </Route>
             <Route path="/privacy" component={Privacy} />
             <Route path="/en/privacy" component={Privacy} />
             <Route path="/" component={HomePage} />

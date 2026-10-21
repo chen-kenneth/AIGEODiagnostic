@@ -47,5 +47,6 @@ export function getArticle(slug, lang = 'zh') {
 }
 
 export function articleUrl(article) {
-  return `/articles/${article.slug}`
+  const prefix = article.lang === 'en' ? '/en' : ''
+  return `${prefix}/articles/${article.slug}`
 }

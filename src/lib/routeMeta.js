@@ -27,6 +27,11 @@ export function listRoutes() {
     if (a.slug === 'placeholder') continue
     routes.push({ path: `/articles/${a.slug}`, file: `articles/${a.slug}/index.html` })
   }
+  routes.push({ path: '/en/articles', file: 'en/articles/index.html' })
+  for (const a of getArticles('en')) {
+    if (a.slug === 'placeholder') continue
+    routes.push({ path: `/en/articles/${a.slug}`, file: `en/articles/${a.slug}/index.html` })
+  }
   return routes
 }
 
@@ -105,6 +110,7 @@ export function headFor(path) {
   let schemas = [orgSchema(lang)]
 
   const articleMatch = path.match(/^\/articles\/([\w-]+)$/)
+  const enArticleMatch = path.match(/^\/en\/articles\/([\w-]+)$/)
   if (path === '/' || path === '/en') {
     schemas.push(faqSchema(lang))
     schemas.push({
@@ -115,10 +121,11 @@ export function headFor(path) {
       inLanguage: lang === 'zh' ? 'zh-CN' : 'en',
     })
     schemas.push(webPageSchema(title, canonical, lang))
-  } else if (path === '/articles') {
+  } else if (path === '/articles' || path === '/en/articles') {
     title = `${t.articles.title} | RankGeo`
     description = t.articles.intro
-    const list = getArticles('zh')
+    const list = getArticles(lang)
+    const listPrefix = lang === 'en' ? '/en' : ''
     schemas.push({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
@@ -129,7 +136,7 @@ export function headFor(path) {
         itemListElement: list.map((a, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          url: `${BASE}/articles/${a.slug}/`,
+          url: `${BASE}${listPrefix}/articles/${a.slug}/`,
           name: a.title,
         })),
       },
@@ -139,12 +146,15 @@ export function headFor(path) {
       { name: 'RankGeo', url: `${BASE}/` },
       { name: title.replace(' | RankGeo', ''), url: canonical },
     ]))
-  } else if (articleMatch) {
-    const a = getArticle(articleMatch[1], 'zh')
+  } else if (articleMatch || enArticleMatch) {
+    const match = articleMatch || enArticleMatch
+    const aLang = enArticleMatch ? 'en' : 'zh'
+    const a = getArticle(match[1], aLang)
     if (a) {
       title = `${a.title} | RankGeo`
       description = a.description
       ogType = 'article'
+      const artPrefix = aLang === 'en' ? '/en' : ''
       schemas = [
         {
           '@context': 'https://schema.org',
@@ -156,13 +166,13 @@ export function headFor(path) {
           dateModified: a.dateModified,
           author: { '@type': 'Organization', name: 'RankGeo', url: `${BASE}/` },
           publisher: { '@type': 'Organization', name: 'RankGeo', url: `${BASE}/` },
-          inLanguage: 'zh-CN',
+          inLanguage: aLang === 'zh' ? 'zh-CN' : 'en',
           mainEntityOfPage: canonical,
         },
-        webPageSchema(title, canonical, 'zh'),
+        webPageSchema(title, canonical, aLang),
         breadcrumbSchema([
           { name: 'RankGeo', url: `${BASE}/` },
-          { name: t.articles.title, url: `${BASE}/articles/` },
+          { name: t.articles.title, url: `${BASE}${artPrefix}/articles/` },
           { name: a.title, url: canonical },
         ]),
       ]
@@ -182,7 +192,14 @@ export function headFor(path) {
   }
 
   // hreflang：只有真实成对的语言版本才配对
-  const pairs = { '/': '/en', '/en': '/', '/privacy': '/en/privacy', '/en/privacy': '/privacy' }
+  const pairs = { '/': '/en', '/en': '/', '/privacy': '/en/privacy', '/en/privacy': '/privacy', '/articles': '/en/articles', '/en/articles': '/articles' }
+  // 文章页中英配对：/articles/{slug} ↔ /en/articles/{slug}
+  const artPair = path.match(/^\/(en\/)?articles\/([\w-]+)$/)
+  if (artPair) {
+    const slug = artPair[2]
+    const isEn = !!artPair[1]
+    pairs[path] = isEn ? `/articles/${slug}` : `/en/articles/${slug}`
+  }
   let hreflang = ''
   if (pairs[path]) {
     const other = pairs[path]

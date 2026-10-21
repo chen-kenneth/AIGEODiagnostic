@@ -18,9 +18,15 @@ export default function Nav() {
           <a href={homePath} className="nav-link">
             {t.nav.home}
           </a>
-          <a href={lang === 'zh' ? '/articles' : '/articles'} className="nav-link">
-            {t.nav.articles}
-          </a>
+          {lang === 'zh' ? (
+            <a href="/articles" className="nav-link">
+              {t.nav.articles}
+            </a>
+          ) : (
+            <a href="/en/articles" className="nav-link">
+              {t.nav.articles}
+            </a>
+          )}
           <div className="lang-toggle-nav" role="group" aria-label="Language">
             <button
               className={lang === 'zh' ? 'active' : ''}

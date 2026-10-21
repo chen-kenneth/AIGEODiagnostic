@@ -12,7 +12,7 @@ export default function ArticlePage({ slug }) {
       <section>
         <div className="container">
           <h1>404</h1>
-          <p><a href="/articles">{a.backToList}</a></p>
+          <p><a href={lang === 'zh' ? "/articles" : "/en/articles"}>{a.backToList}</a></p>
         </div>
       </section>
     )
@@ -21,7 +21,7 @@ export default function ArticlePage({ slug }) {
   return (
     <article className="article-page">
       <div className="container container-narrow">
-        <a href="/articles" className="article-back">{a.backToList}</a>
+        <a href={lang === 'zh' ? "/articles" : "/en/articles"} className="article-back">{a.backToList}</a>
         <div className="label">{a.label}</div>
         <h1>{article.title}</h1>
         <p className="article-meta mono">

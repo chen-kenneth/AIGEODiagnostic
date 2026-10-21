@@ -317,7 +317,7 @@ export const realtors = {
     },
     nav: {
       cta: 'Free AI Visibility Check',
-      articles: 'Blog (中文)',
+      articles: 'Blog',
       home: 'Home',
     },
     hero: {
@@ -596,7 +596,7 @@ export const realtors = {
     footer: {
       tagline: 'AI Visibility. Real Clients. Real Growth.',
       location: 'Canada',
-      articles: 'Blog (中文)',
+      articles: 'Blog',
       privacy: 'Privacy Policy',
       copy: '© 2026 RankGeo. All rights reserved.',
     },
