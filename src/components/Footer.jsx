@@ -5,16 +5,16 @@ export default function Footer() {
   const f = t.footer
   const homePath = lang === 'zh' ? '/' : '/en'
   const privacyPath = lang === 'zh' ? '/privacy' : '/en/privacy'
-  // 页脚 logo：白字深色版，直接放深色页脚上（不再用白色胶囊）
-  const logoSrc = '/logo-footer-dark.png'
+  // 页脚 logo：与导航栏统一用 rankgeo-navbar-dark.svg，保证对齐一致
+  const logoSrc = '/rankgeo-navbar-dark.svg'
   const logoAlt = 'RankGeo.ca 优排智能'
 
   return (
     <footer>
       <div className="footer-logo">
         <img src={logoSrc} alt={logoAlt} />
+        {lang === 'zh' && <span className="footer-cn-name">优排智能</span>}
       </div>
-      {lang === 'zh' && <p className="footer-cn-name">优排智能</p>}
       <p className="footer-tagline">{f.tagline}</p>
       <p className="footer-location">{f.location}</p>
       <p className="footer-email">
