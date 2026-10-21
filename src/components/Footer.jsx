@@ -14,6 +14,7 @@ export default function Footer() {
       <div className="footer-logo">
         <img src={logoSrc} alt={logoAlt} />
       </div>
+      {lang === 'zh' && <p className="footer-cn-name">优排智能</p>}
       <p className="footer-tagline">{f.tagline}</p>
       <p className="footer-location">{f.location}</p>
       <p className="footer-email">

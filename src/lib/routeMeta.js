@@ -227,7 +227,8 @@ export function headFor(path) {
     `<meta name="twitter:card" content="summary_large_image" />`,
     hreflang,
     schemas.map(jsonLd).join('\n    '),
-    `<script async src="https://plausible.io/js/pa-Gctto-RgecPrA5e2_OdPq.js"></script>`,
+    `<!-- Privacy-friendly analytics by Plausible -->`,
+    `<script async src="https://plausible.io/js/pa-Gcfto-RgecPrA5e2_OdPq.js"></script>`,
     `<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>`,
   ].join('\n    ')
 }

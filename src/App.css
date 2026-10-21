@@ -845,3 +845,14 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .chat-bubble.thinking .dot, .caret { animation: none; }
 }
+
+/* --- 中文公司名：优排智能 --- */
+.nav-logo { display: flex; align-items: center; gap: 10px; }
+.nav-cn-name {
+  font-size: 1.05rem; font-weight: 700; color: #fff;
+  letter-spacing: 2px; white-space: nowrap;
+}
+.footer-cn-name {
+  font-size: 1.3rem; font-weight: 800; color: #fff;
+  letter-spacing: 6px; margin: 10px 0 0; text-align: center;
+}
