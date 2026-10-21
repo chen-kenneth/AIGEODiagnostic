@@ -1,9 +1,10 @@
 import { useLang } from '../context/LanguageContext'
+import PhoneDemo from './PhoneDemo'
 
 /**
  * Hero — 深色科技风
  * 左：提问式主标题 + 副标题 + 双 CTA
- * 右：AI 问答模拟演示卡（明确标注"模拟演示"，非真实截图）
+ * 右：手机框 AI 问答动画（模拟演示）
  */
 export default function Hero() {
   const { t } = useLang()
@@ -23,28 +24,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="ai-demo" role="img" aria-label={h.demoBadge}>
-          <div className="ai-demo-head">
-            <span className="ai-demo-badge mono">{h.demoBadge}</span>
-            <span className="ai-demo-title">{h.demoTitle}</span>
-          </div>
-          <div className="ai-demo-query mono">{h.demoQuery}</div>
-          <div className="ai-demo-answer">
-            {h.demoAnswer.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-            <ol className="ai-demo-list">
-              {h.demoEntries.map((e, i) => (
-                <li key={i}>
-                  <strong>{e.name}</strong>
-                  <span>{e.note}</span>
-                </li>
-              ))}
-            </ol>
-          </div>
-          <p className="ai-demo-footnote">{h.demoFootnote}</p>
-          <p className="ai-demo-caption">{h.demoCaption}</p>
-        </div>
+        <PhoneDemo />
       </div>
     </section>
   )
