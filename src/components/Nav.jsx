@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="nav-inner">
         <a href={homePath} className="nav-logo" aria-label={logoAlt}>
-          <img src={logoSrc} alt={logoAlt} />
+          <img src={logoSrc} alt={logoAlt} width={1681} height={321} />
           {lang === 'zh' && <span className="nav-cn-name">优排智能</span>}
         </a>
         <div className="nav-right">

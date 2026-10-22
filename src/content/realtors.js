@@ -208,7 +208,7 @@ export const realtors = {
     },
     articles: {
       label: '原创研究',
-      title: '最新文章',
+      title: '最新文章：AI 可见度研究与实战',
       intro: '我们把检测方法、行业观察写成文章——这些也是 AI 引用我们的来源。',
       viewAll: '查看全部文章 →',
       readMore: '阅读全文 →',
@@ -506,7 +506,7 @@ export const realtors = {
     },
     articles: {
       label: 'Original research',
-      title: 'Latest articles',
+      title: 'Latest Articles: AI Visibility Research & Q&A',
       intro: 'We publish our methods and observations — these articles are also sources AI can cite.',
       viewAll: 'View all articles →',
       readMore: 'Read more →',

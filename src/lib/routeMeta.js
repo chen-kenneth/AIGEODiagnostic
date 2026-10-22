@@ -105,6 +105,9 @@ export function headFor(path) {
   const t = realtors[lang]
   const canonical = `${BASE}${path === '/' ? '/' : path + '/'}`
 
+  // 品牌后缀：中文页带优排智能，英文页保持 RankGeo
+  const brandSuffix = lang === 'zh' ? 'RankGeo 优排智能' : 'RankGeo'
+
   let title = t.meta.title
   let description = t.meta.description
   let ogType = 'website'
@@ -123,7 +126,7 @@ export function headFor(path) {
     })
     schemas.push(webPageSchema(title, canonical, lang))
   } else if (path === '/articles' || path === '/en/articles') {
-    title = `${t.articles.title} | RankGeo`
+    title = `${t.articles.title} | ${brandSuffix}`
     description = t.articles.intro
     const list = getArticles(lang)
     const listPrefix = lang === 'en' ? '/en' : ''
@@ -145,7 +148,7 @@ export function headFor(path) {
     schemas.push(webPageSchema(title, canonical, lang))
     schemas.push(breadcrumbSchema([
       { name: 'RankGeo', url: `${BASE}/` },
-      { name: title.replace(' | RankGeo', ''), url: canonical },
+      { name: title.replace(` | ${brandSuffix}`, ''), url: canonical },
     ]))
   } else if (articleMatch || enArticleMatch) {
     const match = articleMatch || enArticleMatch
@@ -179,7 +182,7 @@ export function headFor(path) {
       ]
     }
   } else if (path === '/privacy' || path === '/en/privacy') {
-    title = `${t.privacy.title} | RankGeo`
+    title = `${t.privacy.title} | ${brandSuffix}`
     description = t.privacy.body[0]
     schemas = [
       {

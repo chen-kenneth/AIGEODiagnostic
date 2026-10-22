@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-logo">
-        <img src={logoSrc} alt={logoAlt} />
+        <img src={logoSrc} alt={logoAlt} width={1681} height={321} />
         {lang === 'zh' && <span className="footer-cn-name">优排智能</span>}
       </div>
       <p className="footer-tagline">{f.tagline}</p>

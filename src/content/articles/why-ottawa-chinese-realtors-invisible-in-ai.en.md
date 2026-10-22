@@ -1,5 +1,5 @@
 ---
-title: Why Ottawa's Chinese-Speaking Realtors Are "Invisible" in AI Answers
+title: Why Ottawa's Chinese Realtors Are Invisible in AI Answers
 description: Ask AI "recommend a Chinese-speaking realtor in Ottawa" — why do some names never appear? The bilingual gap, weak third-party mentions, inconsistent information: three reasons for invisibility.
 slug: why-ottawa-chinese-realtors-invisible-in-ai
 date: 2026-10-12

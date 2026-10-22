@@ -1,5 +1,5 @@
 ---
-title: RankGeo AI Visibility Test Methodology: 48 Simulated Buyer Queries × 4 AI Engines
+title: AI Visibility Test Methodology: 48 Queries in 4 AI Engines
 description: How RankGeo's AI visibility test works: 48 simulated buyer queries, 4 AI engines, how mention rate is calculated — and what this method can't measure.
 slug: ai-visibility-test-methodology
 date: 2026-10-12
