@@ -1,5 +1,6 @@
 import { useLang } from '../context/LanguageContext'
 import { getArticle } from '../lib/articles'
+import CTAForm from './CTAForm'
 
 /** /articles/:slug 文章页 */
 export default function ArticlePage({ slug }) {
@@ -32,6 +33,7 @@ export default function ArticlePage({ slug }) {
           dangerouslySetInnerHTML={{ __html: article.html }}
         />
       </div>
+      <CTAForm />
     </article>
   )
 }

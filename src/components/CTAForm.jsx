@@ -25,6 +25,7 @@ export default function CTAForm() {
     setStatus('sending')
     const data = {
       name: fd.get('name'),
+      industry: fd.get('industry'),
       website: fd.get('website'),
       city: fd.get('city'),
       languageFocus: focusLang,
@@ -64,6 +65,10 @@ export default function CTAForm() {
               <div className="form-row">
                 <label htmlFor="name">{f.nameLbl}</label>
                 <input type="text" id="name" name="name" placeholder={f.namePh} required autoComplete="name" />
+              </div>
+              <div className="form-row">
+                <label htmlFor="industry">{f.industryLbl}</label>
+                <input type="text" id="industry" name="industry" placeholder={f.industryPh} required autoComplete="off" />
               </div>
               <div className="form-row">
                 <label htmlFor="website">{f.websiteLbl}</label>

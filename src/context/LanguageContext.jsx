@@ -10,17 +10,25 @@ export function langFromPath(path) {
   return path === '/en' || path.startsWith('/en/') ? 'en' : 'zh'
 }
 
-/** 语言切换时的目标路由（文章暂只有中文版，保持不动） */
-function toggleTarget(path, lang) {
+/** 语言切换时的目标路由（文章页中英成对，切换到同篇文章的另一语言版） */
+function toggleTarget(rawPath, lang) {
+  // 预渲染页 URL 带尾斜杠（如 /articles/slug/），先归一化再匹配
+  const path = rawPath.length > 1 ? rawPath.replace(/\/$/, '') : rawPath
   if (lang === 'zh') {
     if (path === '/') return '/en'
     if (path === '/privacy') return '/en/privacy'
-    return path // /articles* 暂无英文版，保持当前页
+    if (path === '/articles') return '/en/articles'
+    const m = path.match(/^\/articles\/([\w-]+)$/)
+    if (m) return `/en/articles/${m[1]}`
+    return rawPath
   }
   // en → zh
   if (path === '/en') return '/'
   if (path === '/en/privacy') return '/privacy'
-  return path
+  if (path === '/en/articles') return '/articles'
+  const m = path.match(/^\/en\/articles\/([\w-]+)$/)
+  if (m) return `/articles/${m[1]}`
+  return rawPath
 }
 
 export function LanguageProvider({ children }) {
