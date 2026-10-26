@@ -58,6 +58,6 @@ They're not mutually exclusive, but their goals, methods, and metrics differ. We
 
 For realtors, GEO answers a very concrete question: **"When a buyer asks AI for a realtor recommendation, will my name appear?"**
 
-You can't answer that by gut feeling — it needs real testing. Our method: 48 simulated buyer queries across 4 major AI engines, measuring mention rates, re-tested monthly for trends. Details: [RankGeo AI Visibility Test Methodology](/en/articles/ai-visibility-test-methodology).
+You can't answer that by gut feeling — it needs real testing. Our method: multiple sets of real buyer questions across major AI engines, measuring mention rates, re-tested monthly for trends.
 
 If you want to know where you stand today, start with a free check — we'll tell you whether AI currently "knows" you, and where your biggest gaps are.

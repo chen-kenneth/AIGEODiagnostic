@@ -90,9 +90,9 @@ export const realtors = {
       label: '检测报告示例',
       title: '检测报告，长这样',
       intro:
-        '以下为模拟报告（示意数据），展示一次 AI 可见度检测包含的维度和呈现方式。你的完整报告会基于 48 个模拟买家查询 × 4 个 AI 引擎的实测结果生成。',
+        '以下为模拟报告（示意数据），展示一次 AI 可见度检测包含的维度和呈现方式。你的完整报告会基于多组真实买家问题 × 多个主流 AI 引擎的实测结果生成。',
       metrics: [
-        { value: '12%', label: 'AI 提及率', sub: '48 查询 × 4 引擎' },
+        { value: '12%', label: 'AI 提及率', sub: '多问题 × 多引擎实测' },
         { value: '4 / 21%', label: '英文 / 中文提及率', sub: '语言缺口明显' },
         { value: '第 4 名', label: '本地竞争排序', sub: '对比 3 位同行' },
         { value: '17', label: '引用来源数', sub: 'Top 5 来源列出' },
@@ -162,7 +162,7 @@ export const realtors = {
       label: '我们的方法',
       title: '四步：检测 → 诊断 → 优化 → 监测',
       steps: [
-        { title: '检测', desc: '运行 48 个模拟买家查询 × 4 个 AI 引擎，精确测量你的提及率，以及与竞争者的差距。' },
+        { title: '检测', desc: '用多组真实买家问题 × 多个主流 AI 引擎实测，精确测量你的提及率，以及与竞争者的差距。' },
         { title: '诊断', desc: '定位缺口：哪类查询缺席、哪种语言掉队、哪些来源缺失，形成优先级清单。' },
         { title: '优化', desc: '按优先级执行改进：评价管理、内容结构、引用来源、双语覆盖。' },
         { title: '监测', desc: '每月用同一方法复测，用提及率趋势验证改进是否真实发生。' },
@@ -174,7 +174,7 @@ export const realtors = {
       label: 'AI 可见度检测',
       title: '先免费做一次 AI 可见度检测',
       intro:
-        '在开始之前，我们先运行一次免费简化检测，了解你的现状：你在 AI 回答中出现的频率、竞争者在哪些方面领先、你错过了哪类查询。免费版为一页摘要；完整版覆盖 48 个模拟买家查询 × 4 个 AI 引擎，每月复测。报告会发到你的邮箱。',
+        '在开始之前，我们先运行一次免费简化检测，了解你的现状：你在 AI 回答中出现的频率、竞争者在哪些方面领先、你错过了哪类查询。免费版为一页摘要；完整版覆盖多组真实买家问题 × 多个主流 AI 引擎，每月复测。报告会发到你的邮箱。',
       insightLabel: '示例洞察报告',
       youLabel: '你',
       youPct: '18% 的相关查询',
@@ -200,7 +200,7 @@ export const realtors = {
       title: '一个工作室，只专注一件事',
       body: 'RankGeo 是加拿大的 GEO 咨询工作室，专注帮助华语地产经纪提升在 AI 搜索中的可见度。我们相信小而深：不做全案营销，只做 AI 可见度这一件事，用真实查询数据说话，用每月复测验证效果。',
       points: [
-        { title: '实测而非估计', desc: '48 个模拟买家查询 × ChatGPT、Perplexity、Gemini、Claude 四个引擎，不用估计，用实测。' },
+        { title: '实测而非估计', desc: '多组真实买家问题 × 多个主流 AI 引擎，不用估计，用实测。' },
         { title: '中英双语', desc: '同时覆盖英文与中文买家群体——这是大多数经纪人的盲区。' },
         { title: '数据验证', desc: '每月同一方法复测，提及率趋势是最诚实的成绩单。' },
       ],
@@ -284,7 +284,7 @@ export const realtors = {
         },
         {
           q: '免费 AI 可见度检测包含什么？多久能收到？',
-          a: '免费检测是人工运行的精简版扫描：抽样买家查询 × 主要 AI 引擎，生成一页可见度摘要（你的提及率 + 最明显的缺口），通常 2 个工作日内通过邮件发送。完整版检测是 48 个模拟买家查询 × 4 个 AI 引擎全量运行，外加竞争对手对比、优先级优化清单和每月复测——那是收费服务的内容。',
+          a: '免费检测是人工运行的精简版扫描：抽样买家查询 × 主要 AI 引擎，生成一页可见度摘要（你的提及率 + 最明显的缺口），通过邮件发送。完整版检测是多组真实买家问题 × 多个主流 AI 引擎完整运行，外加竞争对手对比、优先级优化清单和每月复测——那是收费服务的内容。',
         },
       ],
     },
@@ -390,9 +390,9 @@ export const realtors = {
       label: 'Sample report',
       title: 'What your visibility report looks like',
       intro:
-        'Below is a simulated report (illustrative data) showing the dimensions and format of an AI visibility check. Your full report is generated from 48 simulated buyer queries × 4 AI engines.',
+        'Below is a simulated report (illustrative data) showing the dimensions and format of an AI visibility check. Your full report is generated from multiple sets of real buyer questions × major AI engines.',
       metrics: [
-        { value: '12%', label: 'AI mention rate', sub: '48 queries × 4 engines' },
+        { value: '12%', label: 'AI mention rate', sub: 'Multi-question × multi-engine testing' },
         { value: '4 / 21%', label: 'EN / ZH mention rate', sub: 'Clear language gap' },
         { value: '#4', label: 'Local ranking', sub: 'vs 3 peers' },
         { value: '17', label: 'Citing sources', sub: 'Top 5 listed' },
@@ -462,7 +462,7 @@ export const realtors = {
       label: 'Our Approach',
       title: 'Four steps: check → diagnose → improve → monitor',
       steps: [
-        { title: 'Check', desc: 'Run 48 simulated buyer queries × 4 AI engines to measure your mention rate and the gap to competitors.' },
+        { title: 'Check', desc: 'Run multiple sets of real buyer questions × major AI engines to measure your mention rate and the gap to competitors.' },
         { title: 'Diagnose', desc: 'Pinpoint the gaps: which queries you miss, which language lags, which sources are absent.' },
         { title: 'Improve', desc: 'Execute prioritized fixes: review management, content structure, citation sources, bilingual coverage.' },
         { title: 'Monitor', desc: 'Re-test monthly with the same method; mention-rate trends verify real improvement.' },
@@ -474,7 +474,7 @@ export const realtors = {
       label: 'AI Visibility Check',
       title: 'Start with a free AI visibility check',
       intro:
-        "Before anything else, we run a free simplified check to see where you stand: how often you appear in AI answers, where competitors lead, and which queries you miss. The free version is a one-page summary; the full version covers 48 simulated buyer queries × 4 AI engines with monthly re-testing. The report goes to your inbox.",
+        "Before anything else, we run a free simplified check to see where you stand: how often you appear in AI answers, where competitors lead, and which queries you miss. The free version is a one-page summary; the full version covers multiple sets of real buyer questions × major AI engines with monthly re-testing. The report goes to your inbox.",
       insightLabel: 'Example Insight Report',
       youLabel: 'You',
       youPct: '18% of relevant queries',
@@ -500,7 +500,7 @@ export const realtors = {
       title: 'A studio focused on one thing',
       body: 'RankGeo is a GEO consultancy based in Canada, focused on helping Chinese-speaking realtors become more visible in AI search. We believe in small and deep: no full-service marketing, just AI visibility — measured with real query data and verified with monthly re-tests.',
       points: [
-        { title: 'Measured, not estimated', desc: '48 simulated buyer queries × 4 engines (ChatGPT, Perplexity, Gemini, Claude). Measured, not estimated.' },
+        { title: 'Measured, not estimated', desc: 'Multiple sets of real buyer questions × major AI engines. Measured, not estimated.' },
         { title: 'Bilingual', desc: 'Covering English and Chinese buyer groups — the blind spot of most realtors.' },
         { title: 'Verified by data', desc: 'Same-method monthly re-tests; mention-rate trends are the honest report card.' },
       ],
@@ -584,7 +584,7 @@ export const realtors = {
         },
         {
           q: 'What does the free AI visibility check include? When do I get it?',
-          a: 'The free check is a manually-run lite scan: a sample of buyer queries × major AI engines, summarized in a one-page snapshot (your mention rate + the most obvious gaps), usually delivered by email within 2 business days. The full check runs 48 simulated buyer queries × 4 AI engines, plus competitor comparison, a prioritized action list, and monthly re-testing — that is the paid service.',
+          a: 'The free check is a manually-run lite scan: a sample of buyer queries × major AI engines, summarized in a one-page snapshot (your mention rate + the most obvious gaps), delivered by email. The full check runs a complete set of buyer questions × major AI engines, plus competitor comparison, a prioritized action list, and monthly re-testing — that is the paid service.',
         },
       ],
     },
