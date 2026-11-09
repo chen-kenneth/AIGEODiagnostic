@@ -596,6 +596,17 @@ footer {
 }
 .btn-ghost:hover { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.06); }
 
+/* Light-section ghost button: .btn-ghost is white-on-dark (hero only).
+   On light sections (e.g. the articles preview on gray-50) white text is
+   invisible, so this variant uses dark text and a dark border. */
+.btn-ghost-light {
+  display: inline-block; padding: 16px 30px; border-radius: 10px;
+  border: 1px solid rgba(13, 27, 42, 0.35); color: var(--navy);
+  font-weight: 600; font-size: .95rem; text-decoration: none;
+  transition: border-color .2s, background .2s;
+}
+.btn-ghost-light:hover { border-color: var(--navy); background: rgba(13, 27, 42, 0.05); }
+
 /* --- AI demo card --- */
 .ai-demo {
   background: rgba(13, 27, 42, 0.72);

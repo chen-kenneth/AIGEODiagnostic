@@ -28,7 +28,7 @@ export default function ArticlesPreview() {
         </div>
 
         <div style={{ marginTop: '28px' }}>
-          <a href="/articles" className="btn-ghost">{a.viewAll}</a>
+          <a href="/articles" className="btn-ghost-light">{a.viewAll}</a>
         </div>
       </div>
     </section>
